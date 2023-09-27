@@ -1,0 +1,1187 @@
+(00.000000) Unable to get $HOME directory, local configuration file will not be used.
+(00.000056) Version: 3.18 (gitid 0)
+(00.000063) Running on aks-nodepool1-25096715-vmss000000 Linux 5.15.126.1-1.cm2 #1 SMP Wed Aug 23 01:21:36 UTC 2023 x86_64
+(00.000066) Would overwrite RPC settings with values from /etc/criu/runc.conf
+(00.000109) Loaded kdat cache from /run/criu.kdat
+(00.000130) Hugetlb size 2 Mb is supported but cannot get dev's number
+(00.000140) Hugetlb size 1024 Mb is supported but cannot get dev's number
+(00.007193) ========================================
+(00.007218) Dumping processes (pid: 3588262 comm: main)
+(00.007221) ========================================
+(00.007228) rlimit: RLIMIT_NOFILE unlimited for self
+(00.007238) Running pre-dump scripts
+(00.007241) 	RPC
+(00.007452) irmap: Searching irmap cache in work dir
+(00.007471) No irmap-cache image
+(00.007474) irmap: Searching irmap cache in parent
+(00.007481) No parent images directory provided
+(00.007483) irmap: No irmap cache
+(00.007501) cpu: x86_family 6 x86_vendor_id GenuineIntel x86_model_id Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+(00.007507) cpu: fpu: xfeatures_mask 0x5 xsave_size 832 xsave_size_max 832 xsaves_size 0
+(00.007511) cpu: fpu: x87 floating point registers     xstate_offsets      0 / 0      xstate_sizes    160 / 160   
+(00.007514) cpu: fpu: AVX registers                    xstate_offsets    576 / 576    xstate_sizes    256 / 256   
+(00.007518) cpu: fpu:1 fxsr:1 xsave:1 xsaveopt:1 xsavec:0 xgetbv1:0 xsaves:0
+(00.007679) cg-prop: Parsing controller "cpu"
+(00.007687) cg-prop: 	Strategy "replace"
+(00.007706) cg-prop: 	Property "cpu.shares"
+(00.007709) cg-prop: 	Property "cpu.cfs_period_us"
+(00.007711) cg-prop: 	Property "cpu.cfs_quota_us"
+(00.007714) cg-prop: 	Property "cpu.rt_period_us"
+(00.007716) cg-prop: 	Property "cpu.rt_runtime_us"
+(00.007718) cg-prop: Parsing controller "memory"
+(00.007721) cg-prop: 	Strategy "replace"
+(00.007725) cg-prop: 	Property "memory.limit_in_bytes"
+(00.007727) cg-prop: 	Property "memory.memsw.limit_in_bytes"
+(00.007729) cg-prop: 	Property "memory.swappiness"
+(00.007732) cg-prop: 	Property "memory.soft_limit_in_bytes"
+(00.007734) cg-prop: 	Property "memory.move_charge_at_immigrate"
+(00.007736) cg-prop: 	Property "memory.oom_control"
+(00.007738) cg-prop: 	Property "memory.use_hierarchy"
+(00.007741) cg-prop: 	Property "memory.kmem.limit_in_bytes"
+(00.007766) cg-prop: 	Property "memory.kmem.tcp.limit_in_bytes"
+(00.007768) cg-prop: Parsing controller "cpuset"
+(00.007771) cg-prop: 	Strategy "replace"
+(00.007773) cg-prop: 	Property "cpuset.cpus"
+(00.007776) cg-prop: 	Property "cpuset.mems"
+(00.007778) cg-prop: 	Property "cpuset.memory_migrate"
+(00.007780) cg-prop: 	Property "cpuset.cpu_exclusive"
+(00.007783) cg-prop: 	Property "cpuset.mem_exclusive"
+(00.007785) cg-prop: 	Property "cpuset.mem_hardwall"
+(00.007788) cg-prop: 	Property "cpuset.memory_spread_page"
+(00.007790) cg-prop: 	Property "cpuset.memory_spread_slab"
+(00.007792) cg-prop: 	Property "cpuset.sched_load_balance"
+(00.007798) cg-prop: 	Property "cpuset.sched_relax_domain_level"
+(00.007800) cg-prop: Parsing controller "blkio"
+(00.007803) cg-prop: 	Strategy "replace"
+(00.007805) cg-prop: 	Property "blkio.weight"
+(00.007808) cg-prop: Parsing controller "freezer"
+(00.007810) cg-prop: 	Strategy "replace"
+(00.007812) cg-prop: Parsing controller "perf_event"
+(00.007815) cg-prop: 	Strategy "replace"
+(00.007817) cg-prop: Parsing controller "net_cls"
+(00.007838) cg-prop: 	Strategy "replace"
+(00.007840) cg-prop: 	Property "net_cls.classid"
+(00.007844) cg-prop: Parsing controller "net_prio"
+(00.007846) cg-prop: 	Strategy "replace"
+(00.007849) cg-prop: 	Property "net_prio.ifpriomap"
+(00.007851) cg-prop: Parsing controller "pids"
+(00.007854) cg-prop: 	Strategy "replace"
+(00.007856) cg-prop: 	Property "pids.max"
+(00.007859) cg-prop: Parsing controller "devices"
+(00.007861) cg-prop: 	Strategy "replace"
+(00.007863) cg-prop: 	Property "devices.list"
+(00.007922) Preparing image inventory (version 1)
+(00.007977) Add pid ns 1 pid 3603565
+(00.007992) Add net ns 2 pid 3603565
+(00.008003) Add ipc ns 3 pid 3603565
+(00.008039) Add uts ns 4 pid 3603565
+(00.008070) Add time ns 5 pid 3603565
+(00.008101) Add mnt ns 6 pid 3603565
+(00.008111) Add user ns 7 pid 3603565
+(00.008120) Add cgroup ns 8 pid 3603565
+(00.008123) cg: Dumping cgroups for thread 3603565
+(00.008179) cg:  `- New css ID 1
+(00.008183) cg:     `- [blkio] -> [/system.slice/containerd.service] [0]
+(00.008185) cg:     `- [cpu,cpuacct] -> [/system.slice/containerd.service] [0]
+(00.008188) cg:     `- [cpuset] -> [/] [0]
+(00.008190) cg:     `- [devices] -> [/system.slice/containerd.service] [0]
+(00.008192) cg:     `- [freezer] -> [/] [0]
+(00.008194) cg:     `- [hugetlb] -> [/] [0]
+(00.008196) cg:     `- [memory] -> [/system.slice/containerd.service] [0]
+(00.008198) cg:     `- [name=systemd] -> [/system.slice/containerd.service] [0]
+(00.008201) cg:     `- [net_cls,net_prio] -> [/] [0]
+(00.008203) cg:     `- [perf_event] -> [/] [0]
+(00.008205) cg:     `- [pids] -> [/system.slice/containerd.service] [0]
+(00.008207) cg:     `- [rdma] -> [/] [0]
+(00.008209) cg: Set 1 is criu one
+(00.008232) Detected cgroup V1 freezer
+(00.008235) freezing processes: 100000 attempts with 100 ms steps
+(00.008258) freezer.state=THAWED
+(00.008277) freezer.state=FREEZING
+(00.108412) freezer.state=FROZEN
+(00.108438) freezing processes: 1 attempts done
+(00.108533) SEIZE 3588262 (comm main): success
+(00.108556) SEIZE 3588275 (comm main): success
+(00.108589) SEIZE 3588276 (comm main): success
+(00.108610) SEIZE 3588277 (comm main): success
+(00.108867) Seized task 3588262, state 1
+(00.108875) seccomp: Collected tid_real 3588262 mode 0
+(00.108897) 	Seizing 3588262's 3588275 thread
+(00.108943) seccomp: Collected tid_real 3588275 mode 0
+(00.108947) 	Seizing 3588262's 3588276 thread
+(00.108973) seccomp: Collected tid_real 3588276 mode 0
+(00.108976) 	Seizing 3588262's 3588277 thread
+(00.109035) seccomp: Collected tid_real 3588277 mode 0
+(00.109053) Collected (-1 attempts, 0 in_progress)
+(00.109105) Collected (0 attempts, 0 in_progress)
+(00.109120) Collected 3588262 in 1 state
+(00.109184) Will take mnt namespace in the image
+(00.109188) Add mnt ns 9 pid 3588262
+(00.109218) net: Lock network
+(00.109294) 	type overlay source overlay mnt_id 2925 s_dev 0x13b / @ ./ flags 0x280000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/581/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/580/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/579/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/work
+(00.109307) 	type proc source proc mnt_id 2926 s_dev 0x13d / @ ./proc flags 0x20000e options 
+(00.109314) 	type tmpfs source tmpfs mnt_id 2927 s_dev 0x13e / @ ./dev flags 0x1000002 options size=65536k,mode=755
+(00.109322) 	type devpts source devpts mnt_id 2947 s_dev 0x13f / @ ./dev/pts flags 0x20000a options gid=5,mode=620,ptmxmode=666
+(00.109360) 	type mqueue source mqueue mnt_id 2959 s_dev 0x13 / @ ./dev/mqueue flags 0x20000e options 
+(00.109367) 	type sysfs source sysfs mnt_id 2961 s_dev 0x15 / @ ./sys flags 0x20000f options 
+(00.109390) 	type tmpfs source tmpfs mnt_id 2962 s_dev 0x140 / @ ./sys/fs/cgroup flags 0x20000e options mode=755
+(00.109428) 	type cgroup source cgroup mnt_id 2963 s_dev 0x1a /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/systemd flags 0x28000f options xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd
+(00.109435) 	type cgroup source cgroup mnt_id 2964 s_dev 0x1e /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/cpu,cpuacct flags 0x28000f options cpu,cpuacct
+(00.109445) 	type cgroup source cgroup mnt_id 2965 s_dev 0x1f /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/net_cls,net_prio flags 0x28000f options net_cls,net_prio
+(00.109462) 	type cgroup source cgroup mnt_id 2966 s_dev 0x20 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/blkio flags 0x28000f options blkio
+(00.109508) 	type cgroup source cgroup mnt_id 2967 s_dev 0x21 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/devices flags 0x28000f options devices
+(00.109515) 	type cgroup source cgroup mnt_id 2968 s_dev 0x22 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/cpuset flags 0x28000f options cpuset
+(00.109520) 	type cgroup source cgroup mnt_id 2969 s_dev 0x23 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/freezer flags 0x28000f options freezer
+(00.109526) 	type cgroup source cgroup mnt_id 2970 s_dev 0x24 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/hugetlb flags 0x28000f options hugetlb
+(00.109560) 	type cgroup source cgroup mnt_id 2971 s_dev 0x25 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/pids flags 0x28000f options pids
+(00.109591) 	type cgroup source cgroup mnt_id 2972 s_dev 0x26 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/memory flags 0x28000f options memory
+(00.109612) 	type cgroup source cgroup mnt_id 2973 s_dev 0x27 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/rdma flags 0x28000f options rdma
+(00.109619) 	type cgroup source cgroup mnt_id 2974 s_dev 0x28 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./sys/fs/cgroup/perf_event flags 0x28000f options perf_event
+(00.109624) 	type ext4 source /dev/sda3 mnt_id 2975 s_dev 0x800003 / @ ./host flags 0x200000 options 
+(00.109630) 	type sysfs source sysfs mnt_id 2976 s_dev 0x15 / @ ./host/sys flags 0x20000e options 
+(00.109635) 	type securityfs source securityfs mnt_id 2977 s_dev 0x6 / @ ./host/sys/kernel/security flags 0x20000e options 
+(00.109660) 	type tmpfs source tmpfs mnt_id 2978 s_dev 0x19 / @ ./host/sys/fs/cgroup flags 0x100000f options size=4096k,nr_inodes=1024,mode=755
+(00.109667) 	type cgroup source cgroup mnt_id 2979 s_dev 0x1a / @ ./host/sys/fs/cgroup/systemd flags 0x20000e options xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd
+(00.109672) 	type cgroup source cgroup mnt_id 2980 s_dev 0x1e / @ ./host/sys/fs/cgroup/cpu,cpuacct flags 0x20000e options cpu,cpuacct
+(00.109678) 	type cgroup source cgroup mnt_id 2981 s_dev 0x1f / @ ./host/sys/fs/cgroup/net_cls,net_prio flags 0x20000e options net_cls,net_prio
+(00.109683) 	type cgroup source cgroup mnt_id 2982 s_dev 0x20 / @ ./host/sys/fs/cgroup/blkio flags 0x20000e options blkio
+(00.109688) 	type cgroup source cgroup mnt_id 2983 s_dev 0x21 / @ ./host/sys/fs/cgroup/devices flags 0x20000e options devices
+(00.109692) 	type cgroup source cgroup mnt_id 2984 s_dev 0x22 / @ ./host/sys/fs/cgroup/cpuset flags 0x20000e options cpuset
+(00.109697) 	type cgroup source cgroup mnt_id 2985 s_dev 0x23 / @ ./host/sys/fs/cgroup/freezer flags 0x20000e options freezer
+(00.109706) 	type cgroup source cgroup mnt_id 2986 s_dev 0x24 / @ ./host/sys/fs/cgroup/hugetlb flags 0x20000e options hugetlb
+(00.109733) 	type cgroup source cgroup mnt_id 2987 s_dev 0x25 / @ ./host/sys/fs/cgroup/pids flags 0x20000e options pids
+(00.109739) 	type cgroup source cgroup mnt_id 2988 s_dev 0x26 / @ ./host/sys/fs/cgroup/memory flags 0x20000e options memory
+(00.109744) 	type cgroup source cgroup mnt_id 2989 s_dev 0x27 / @ ./host/sys/fs/cgroup/rdma flags 0x20000e options rdma
+(00.109754) 	type cgroup source cgroup mnt_id 2990 s_dev 0x28 / @ ./host/sys/fs/cgroup/perf_event flags 0x20000e options perf_event
+(00.109759) 	type pstore source pstore mnt_id 2991 s_dev 0x1b / @ ./host/sys/fs/pstore flags 0x20000e options 
+(00.109766) 	type efivarfs source efivarfs mnt_id 2992 s_dev 0x1c / @ ./host/sys/firmware/efi/efivars flags 0x20000e options 
+(00.109772) 	type bpf source bpf mnt_id 2993 s_dev 0x1d / @ ./host/sys/fs/bpf flags 0x20000e options mode=700
+(00.109777) 	type debugfs source debugfs mnt_id 2994 s_dev 0x7 / @ ./host/sys/kernel/debug flags 0x20000e options 
+(00.109782) 	type tracefs source tracefs mnt_id 2995 s_dev 0xc / @ ./host/sys/kernel/debug/tracing flags 0x20000e options 
+(00.109784) 	skipping fs mounted at /host/sys/kernel/debug/tracing
+(00.109792) 	type tracefs source tracefs mnt_id 2996 s_dev 0xc / @ ./host/sys/kernel/tracing flags 0x20000e options 
+(00.109794) 	skipping fs mounted at /host/sys/kernel/tracing
+(00.109823) 	type fusectl source fusectl mnt_id 2997 s_dev 0x2c / @ ./host/sys/fs/fuse/connections flags 0x20000e options 
+(00.109828) 	type configfs source configfs mnt_id 2998 s_dev 0x2d / @ ./host/sys/kernel/config flags 0x20000e options 
+(00.109833) 	type devtmpfs source devtmpfs mnt_id 2999 s_dev 0x5 / @ ./host/dev flags 0x1000002 options size=4096k,nr_inodes=1048576,mode=755
+(00.109838) 	type tmpfs source tmpfs mnt_id 3000 s_dev 0x16 / @ ./host/dev/shm flags 0x1000006 options 
+(00.109847) 	type devpts source devpts mnt_id 3001 s_dev 0x17 / @ ./host/dev/pts flags 0x20000a options gid=5,mode=620,ptmxmode=000
+(00.109853) 	type hugetlbfs source hugetlbfs mnt_id 3002 s_dev 0x2a / @ ./host/dev/hugepages flags 0x200000 options pagesize=2M
+(00.109858) 	type mqueue source mqueue mnt_id 3003 s_dev 0x13 / @ ./host/dev/mqueue flags 0x20000e options 
+(00.109863) 	type tmpfs source tmpfs mnt_id 3004 s_dev 0x18 / @ ./host/run flags 0x1000006 options size=1367052k,nr_inodes=819200,mode=755
+(00.109869) 	type tmpfs source shm mnt_id 3005 s_dev 0x36 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/shm flags 0x20000e options size=65536k
+(00.109928) 	type tmpfs source shm mnt_id 3010 s_dev 0x39 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/shm flags 0x20000e options size=65536k
+(00.109953) 	type tmpfs source shm mnt_id 3011 s_dev 0x3a / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/shm flags 0x20000e options size=65536k
+(00.109959) 	type tmpfs source shm mnt_id 3012 s_dev 0x3c / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/shm flags 0x20000e options size=65536k
+(00.109966) 	type overlay source overlay mnt_id 3013 s_dev 0x3d / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/547/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/547/work
+(00.109986) 	type overlay source overlay mnt_id 3014 s_dev 0x3f / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/548/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/548/work
+(00.109995) 	type overlay source overlay mnt_id 3015 s_dev 0x41 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/546/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/546/work
+(00.110057) 	type overlay source overlay mnt_id 3016 s_dev 0x43 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/545/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/545/work
+(00.110063) 	type tmpfs source shm mnt_id 3017 s_dev 0x45 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/shm flags 0x20000e options size=65536k
+(00.110070) 	type overlay source overlay mnt_id 3018 s_dev 0x46 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/549/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/549/work
+(00.110091) 	type overlay source overlay mnt_id 3019 s_dev 0x72 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ec811e544f60b7f3325344c17c8b6bdce45c5fa78f29e3462f3c8f2f0fe86966/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/436/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/435/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/552/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/552/work
+(00.110119) 	type overlay source overlay mnt_id 3020 s_dev 0x78 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b74f5caeb6d153377934b14b0555040fed1353980508074ac00567184ab586d5/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/416/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/9/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/8/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/3/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/550/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/550/work
+(00.110142) 	type overlay source overlay mnt_id 3021 s_dev 0x81 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b71bc9849f6163f7a1d8c188d3b6c564be60a17cf99201bf908a21a06f1fd53d/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/493/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/551/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/551/work
+(00.110171) 	type overlay source overlay mnt_id 3022 s_dev 0x87 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a52bd5a10e5e893ca54a1b1c27c935e2f77a70492907c36a4eeda93efba5e627/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/493/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/554/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/554/work
+(00.110194) 	type overlay source overlay mnt_id 3023 s_dev 0x70 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/c5663584ea24ba9f59088123c54a516fdb6c86f7b043891dfe091a9e094f6c16/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/494/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/555/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/555/work
+(00.110211) 	type overlay source overlay mnt_id 3024 s_dev 0x9d / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5277ddcb8351bc11c0457ccd37392fda786160a775cfd0cb9fd81dd247881346/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/494/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/556/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/556/work
+(00.110236) 	type overlay source overlay mnt_id 3025 s_dev 0xa6 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/821da0e48f34cca9b1802177e96fdff0298dfb1b4b2ac2c64172883333f64659/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/535/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/530/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/557/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/557/work
+(00.110247) 	type overlay source overlay mnt_id 3026 s_dev 0xa8 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/fc422631daabd60cfc9d2e4ff2b4313184bde0f86e597f83695cbf52a35022f7/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/458/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/457/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/452/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/558/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/558/work
+(00.110273) 	type overlay source overlay mnt_id 3027 s_dev 0xb0 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a5de98c62e6298d046dd3574558192e9aa8990ac2ec22718c06d6e0f8b9e051e/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/443/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/442/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/437/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/559/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/559/work
+(00.110281) 	type tmpfs source shm mnt_id 3028 s_dev 0xb4 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/shm flags 0x20000e options size=65536k
+(00.110286) 	type nsfs source nsfs mnt_id 3029 s_dev 0x4 net:[4026532186] @ ./host/run/netns/cni-d95cde20-3d90-1316-16ef-1be079fc9c10 flags 0x1000000 options 
+(00.110292) 	type tmpfs source shm mnt_id 3030 s_dev 0xb5 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/shm flags 0x20000e options size=65536k
+(00.110297) 	type nsfs source nsfs mnt_id 3031 s_dev 0x4 net:[4026532264] @ ./host/run/netns/cni-a1c9fa64-828a-d938-b75a-eeeef219c9e6 flags 0x1000000 options 
+(00.110323) 	type overlay source overlay mnt_id 3032 s_dev 0xb6 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/560/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/560/work
+(00.110332) 	type overlay source overlay mnt_id 3033 s_dev 0xb8 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/561/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/561/work
+(00.110354) 	type overlay source overlay mnt_id 3034 s_dev 0xcc / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/58cdfa84e9f97fecba59db9264033accde61bf9c3d55ca4582518c5f16a6e792/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/9/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/8/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/3/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/563/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/563/work
+(00.110380) 	type overlay source overlay mnt_id 3035 s_dev 0xce / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/60cc48a78f3c68f02586c1bfa04087675cee2a51fbc0f1b5ad2a8f44d1af1472/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/9/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/8/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/3/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/562/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/562/work
+(00.110405) 	type overlay source overlay mnt_id 3036 s_dev 0xde / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/d0d434ba510bb0093e46e98c9a7b1acd61b5085d9c3c18d570a9e8c20a2209c8/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/18/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/16/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/15/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/14/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/13/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/565/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/565/work
+(00.110448) 	type overlay source overlay mnt_id 3037 s_dev 0xe0 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c0b5da536e5cd940698b84baaa55cb4bb44fc098c9bcd51a17fc0a146930981/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/18/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/16/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/15/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/14/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/13/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/564/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/564/work
+(00.110455) 	type tmpfs source shm mnt_id 3038 s_dev 0xf1 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/shm flags 0x20000e options size=65536k
+(00.110463) 	type nsfs source nsfs mnt_id 3039 s_dev 0x4 net:[4026532379] @ ./host/run/netns/cni-20cc5531-acb7-bc0c-f2bb-99d5439d3521 flags 0x1000000 options 
+(00.110469) 	type overlay source overlay mnt_id 3040 s_dev 0xf2 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/566/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/566/work
+(00.110498) 	type overlay source overlay mnt_id 3041 s_dev 0xfd / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4a668ab5044639aea6a050f3895eb17c63d7c73f48673a8c812935c5c671f0be/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/47/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/567/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/567/work
+(00.110504) 	type tmpfs source shm mnt_id 3042 s_dev 0x107 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/shm flags 0x20000e options size=65536k
+(00.110512) 	type nsfs source nsfs mnt_id 3043 s_dev 0x4 net:[4026532448] @ ./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef flags 0x1000000 options 
+(00.110518) 	type overlay source overlay mnt_id 3044 s_dev 0x108 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/568/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/568/work
+(00.110536) 	type overlay source overlay mnt_id 3045 s_dev 0x113 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5ffd06929c6aaa18270806dc1fbb7ef05c78b519856bc8806e64569151f60c62/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/569/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/569/work
+(00.110542) 	type tmpfs source shm mnt_id 3046 s_dev 0x146 / @ ./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/shm flags 0x20000e options size=65536k
+(00.110568) 	type overlay source overlay mnt_id 3047 s_dev 0x147 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/585/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/585/work
+(00.110577) 	type overlay source overlay mnt_id 3048 s_dev 0x151 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/80a3a426d244051cb0da9529446ae8eac7c9ef6dda3c949534cd86fbbe8ba96d/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/452/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/586/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/586/work
+(00.110584) 	type overlay source overlay mnt_id 3049 s_dev 0x120 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2d6e8ffe81cacb6dcdf16855041eea8e7ac7a231ccb76a2be8132e5129d91861/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/597/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/597/work
+(00.110603) 	type overlay source overlay mnt_id 3051 s_dev 0x132 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b93a89fbb89fb264c2fa89c3e59841bace07c8118f3a895c6a6dc20caaa2196e/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/624/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/624/work
+(00.110617) 	type overlay source overlay mnt_id 3052 s_dev 0x13b / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/581/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/580/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/579/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/work
+(00.110633) 	type overlay source overlay mnt_id 3053 s_dev 0x13b / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs flags 0x200000 options lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/581/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/580/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/579/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/625/work
+(00.110638) 	type proc source proc mnt_id 3054 s_dev 0x13d / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/proc flags 0x20000e options 
+(00.110644) 	type tmpfs source tmpfs mnt_id 3056 s_dev 0x13e / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev flags 0x1000002 options size=65536k,mode=755
+(00.110663) 	type devpts source devpts mnt_id 3057 s_dev 0x13f / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/pts flags 0x20000a options gid=5,mode=620,ptmxmode=666
+(00.110675) 	type mqueue source mqueue mnt_id 3058 s_dev 0x13 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/mqueue flags 0x20000e options 
+(00.110680) 	type sysfs source sysfs mnt_id 3059 s_dev 0x15 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys flags 0x20000f options 
+(00.110686) 	type tmpfs source tmpfs mnt_id 3060 s_dev 0x140 / @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup flags 0x20000e options mode=755
+(00.110713) 	type cgroup source cgroup mnt_id 3061 s_dev 0x1a /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/systemd flags 0x20000f options xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd
+(00.110723) 	type cgroup source cgroup mnt_id 3062 s_dev 0x1e /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpu,cpuacct flags 0x20000f options cpu,cpuacct
+(00.110731) 	type cgroup source cgroup mnt_id 3063 s_dev 0x1f /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/net_cls,net_prio flags 0x20000f options net_cls,net_prio
+(00.110754) 	type cgroup source cgroup mnt_id 3064 s_dev 0x20 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/blkio flags 0x20000f options blkio
+(00.110760) 	type cgroup source cgroup mnt_id 3065 s_dev 0x21 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/devices flags 0x20000f options devices
+(00.110769) 	type cgroup source cgroup mnt_id 3066 s_dev 0x22 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpuset flags 0x20000f options cpuset
+(00.110791) 	type cgroup source cgroup mnt_id 3067 s_dev 0x23 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/freezer flags 0x20000f options freezer
+(00.110797) 	type cgroup source cgroup mnt_id 3068 s_dev 0x24 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/hugetlb flags 0x20000f options hugetlb
+(00.110803) 	type cgroup source cgroup mnt_id 3069 s_dev 0x25 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/pids flags 0x20000f options pids
+(00.110820) 	type cgroup source cgroup mnt_id 3070 s_dev 0x26 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/memory flags 0x20000f options memory
+(00.110827) 	type cgroup source cgroup mnt_id 3071 s_dev 0x27 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/rdma flags 0x20000f options rdma
+(00.110833) 	type cgroup source cgroup mnt_id 3072 s_dev 0x28 /kubepods/besteffort/pod64967451-648d-4859-9974-c7c4101d40d3/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f @ ./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/perf_event flags 0x20000f options perf_event
+(00.110868) 	type proc source proc mnt_id 3073 s_dev 0x14 / @ ./host/proc flags 0x20000e options hidepid=invisible
+(00.110875) 	type autofs source systemd-1 mnt_id 3074 s_dev 0x29 / @ ./host/proc/sys/fs/binfmt_misc flags 0x200000 options fd=36,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16919
+(00.110883) 	type binfmt_misc source binfmt_misc mnt_id 3075 s_dev 0x11f / @ ./host/proc/sys/fs/binfmt_misc flags 0x20000e options 
+(00.110888) 	type tmpfs source tmpfs mnt_id 3076 s_dev 0x2b / @ ./host/tmp flags 0x1000006 options nr_inodes=1048576
+(00.110896) 	type ext4 source /dev/sda2 mnt_id 3077 s_dev 0x800002 / @ ./host/boot flags 0x200000 options 
+(00.110903) 	type vfat source /dev/sda1 mnt_id 3078 s_dev 0x800001 / @ ./host/boot/efi flags 0x200000 options fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro
+(00.110911) 	type ext4 source /dev/sdb1 mnt_id 3079 s_dev 0x800011 / @ ./host/mnt flags 0x200000 options 
+(00.110916) 	type ext4 source /dev/sda3 mnt_id 3080 s_dev 0x800003 /var/lib/kubelet @ ./host/var/lib/kubelet flags 0x200000 options 
+(00.110922) 	type tmpfs source tmpfs mnt_id 3081 s_dev 0x34 / @ ./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume flags 0x200000 options size=256000k
+(00.110946) 	type tmpfs source tmpfs mnt_id 3082 s_dev 0x35 / @ ./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg flags 0x200000 options size=409600k
+(00.110952) 	type tmpfs source tmpfs mnt_id 3083 s_dev 0x37 / @ ./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw flags 0x200000 options size=524288k
+(00.110957) 	type tmpfs source tmpfs mnt_id 3084 s_dev 0x38 / @ ./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2 flags 0x200000 options size=614400k
+(00.110965) 	type tmpfs source tmpfs mnt_id 3085 s_dev 0x3b / @ ./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf flags 0x200000 options size=4389944k
+(00.110970) 	type tmpfs source tmpfs mnt_id 3086 s_dev 0x2f / @ ./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd flags 0x200000 options size=367616k
+(00.110975) 	type tmpfs source tmpfs mnt_id 3097 s_dev 0x30 / @ ./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6 flags 0x200000 options size=367616k
+(00.110998) 	type tmpfs source tmpfs mnt_id 3098 s_dev 0xf0 / @ ./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs flags 0x200000 options size=1048576k
+(00.111003) 	type tmpfs source tmpfs mnt_id 3099 s_dev 0x106 / @ ./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk flags 0x200000 options size=512000k
+(00.111023) 	type tmpfs source tmpfs mnt_id 3100 s_dev 0x145 / @ ./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8 flags 0x200000 options size=262144k
+(00.111028) 	type tmpfs source tmpfs mnt_id 3101 s_dev 0x11e / @ ./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d flags 0x200000 options size=4389944k
+(00.111033) 	type tmpfs source tmpfs mnt_id 3102 s_dev 0x12d / @ ./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8 flags 0x200000 options size=4389944k
+(00.111038) 	type tmpfs source tmpfs mnt_id 3103 s_dev 0x34 / @ ./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume flags 0x200000 options size=256000k
+(00.111053) 	type tmpfs source tmpfs mnt_id 3104 s_dev 0x35 / @ ./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg flags 0x200000 options size=409600k
+(00.111058) 	type tmpfs source tmpfs mnt_id 3105 s_dev 0x37 / @ ./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw flags 0x200000 options size=524288k
+(00.111066) 	type tmpfs source tmpfs mnt_id 3106 s_dev 0x38 / @ ./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2 flags 0x200000 options size=614400k
+(00.111071) 	type tmpfs source tmpfs mnt_id 3107 s_dev 0x3b / @ ./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf flags 0x200000 options size=4389944k
+(00.111079) 	type tmpfs source tmpfs mnt_id 3108 s_dev 0x2f / @ ./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd flags 0x200000 options size=367616k
+(00.111105) 	type tmpfs source tmpfs mnt_id 3109 s_dev 0x30 / @ ./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6 flags 0x200000 options size=367616k
+(00.111110) 	type tmpfs source tmpfs mnt_id 3110 s_dev 0xf0 / @ ./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs flags 0x200000 options size=1048576k
+(00.111117) 	type tmpfs source tmpfs mnt_id 3111 s_dev 0x106 / @ ./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk flags 0x200000 options size=512000k
+(00.111123) 	type tmpfs source tmpfs mnt_id 3112 s_dev 0x145 / @ ./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8 flags 0x200000 options size=262144k
+(00.111127) 	type tmpfs source tmpfs mnt_id 3113 s_dev 0x11e / @ ./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d flags 0x200000 options size=4389944k
+(00.111132) 	type tmpfs source tmpfs mnt_id 3114 s_dev 0x12d / @ ./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8 flags 0x200000 options size=4389944k
+(00.111137) 	type ext4 source /dev/sda3 mnt_id 3115 s_dev 0x800003 /var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/etc-hosts @ ./etc/hosts flags 0x200000 options 
+(00.111171) 	type ext4 source /dev/sda3 mnt_id 3116 s_dev 0x800003 /var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/containers/iofileworkload/0e8d3b78 @ ./dev/termination-log flags 0x200000 options 
+(00.111177) 	type ext4 source /dev/sda3 mnt_id 3117 s_dev 0x800003 /var/lib/containerd/io.containerd.grpc.v1.cri/sandboxes/b93a89fbb89fb264c2fa89c3e59841bace07c8118f3a895c6a6dc20caaa2196e/hostname @ ./etc/hostname flags 0x200000 options 
+(00.111186) 	type ext4 source /dev/sda3 mnt_id 3118 s_dev 0x800003 /var/lib/containerd/io.containerd.grpc.v1.cri/sandboxes/b93a89fbb89fb264c2fa89c3e59841bace07c8118f3a895c6a6dc20caaa2196e/resolv.conf @ ./etc/resolv.conf flags 0x200000 options 
+(00.111193) 	type tmpfs source tmpfs mnt_id 3119 s_dev 0x16 / @ ./dev/shm flags 0x1000006 options 
+(00.111198) 	type tmpfs source tmpfs mnt_id 3120 s_dev 0x12d / @ ./run/secrets/kubernetes.io/serviceaccount flags 0x200001 options size=4389944k
+(00.111203) 	type proc source proc mnt_id 2611 s_dev 0x13d /bus @ ./proc/bus flags 0x20000f options 
+(00.111208) 	type proc source proc mnt_id 2612 s_dev 0x13d /fs @ ./proc/fs flags 0x20000f options 
+(00.111213) 	type proc source proc mnt_id 2613 s_dev 0x13d /irq @ ./proc/irq flags 0x20000f options 
+(00.111218) 	type proc source proc mnt_id 2614 s_dev 0x13d /sys @ ./proc/sys flags 0x20000f options 
+(00.111236) 	type proc source proc mnt_id 2615 s_dev 0x13d /sysrq-trigger @ ./proc/sysrq-trigger flags 0x20000f options 
+(00.111241) 	type tmpfs source tmpfs mnt_id 2616 s_dev 0x141 / @ ./proc/acpi flags 0x200001 options 
+(00.111246) 	type tmpfs source tmpfs mnt_id 2617 s_dev 0x13e /null @ ./proc/kcore flags 0x1000002 options size=65536k,mode=755
+(00.111251) 	type tmpfs source tmpfs mnt_id 2618 s_dev 0x13e /null @ ./proc/keys flags 0x1000002 options size=65536k,mode=755
+(00.111259) 	type tmpfs source tmpfs mnt_id 2619 s_dev 0x13e /null @ ./proc/latency_stats flags 0x1000002 options size=65536k,mode=755
+(00.111264) 	type tmpfs source tmpfs mnt_id 2620 s_dev 0x13e /null @ ./proc/timer_list flags 0x1000002 options size=65536k,mode=755
+(00.111269) 	type tmpfs source tmpfs mnt_id 2621 s_dev 0x142 / @ ./proc/scsi flags 0x200001 options 
+(00.111274) 	type tmpfs source tmpfs mnt_id 2622 s_dev 0x143 / @ ./sys/firmware flags 0x200001 options 
+(00.111282) mnt: Building mountpoints tree
+(00.111285) mnt: 	Building plain mount tree
+(00.111291) mnt: 		Working on 2622->2961
+(00.111297) mnt: 		Working on 2621->2926
+(00.111300) mnt: 		Working on 2620->2926
+(00.111302) mnt: 		Working on 2619->2926
+(00.111305) mnt: 		Working on 2618->2926
+(00.111308) mnt: 		Working on 2617->2926
+(00.111311) mnt: 		Working on 2616->2926
+(00.111313) mnt: 		Working on 2615->2926
+(00.111316) mnt: 		Working on 2614->2926
+(00.111319) mnt: 		Working on 2613->2926
+(00.111322) mnt: 		Working on 2612->2926
+(00.111325) mnt: 		Working on 2611->2926
+(00.111327) mnt: 		Working on 3120->2925
+(00.111330) mnt: 		Working on 3119->2927
+(00.111333) mnt: 		Working on 3118->2925
+(00.111336) mnt: 		Working on 3117->2925
+(00.111338) mnt: 		Working on 3116->2927
+(00.111341) mnt: 		Working on 3115->2925
+(00.111344) mnt: 		Working on 3114->2975
+(00.111347) mnt: 		Working on 3113->2975
+(00.111349) mnt: 		Working on 3112->2975
+(00.111352) mnt: 		Working on 3111->2975
+(00.111355) mnt: 		Working on 3110->2975
+(00.111357) mnt: 		Working on 3109->2975
+(00.111360) mnt: 		Working on 3108->2975
+(00.111363) mnt: 		Working on 3107->2975
+(00.111366) mnt: 		Working on 3106->2975
+(00.111368) mnt: 		Working on 3105->2975
+(00.111371) mnt: 		Working on 3104->2975
+(00.111374) mnt: 		Working on 3103->2975
+(00.111376) mnt: 		Working on 3102->3080
+(00.111378) mnt: 		Working on 3101->3080
+(00.111381) mnt: 		Working on 3100->3080
+(00.111383) mnt: 		Working on 3099->3080
+(00.111385) mnt: 		Working on 3098->3080
+(00.111387) mnt: 		Working on 3097->3080
+(00.111389) mnt: 		Working on 3086->3080
+(00.111392) mnt: 		Working on 3085->3080
+(00.111394) mnt: 		Working on 3084->3080
+(00.111396) mnt: 		Working on 3083->3080
+(00.111398) mnt: 		Working on 3082->3080
+(00.111400) mnt: 		Working on 3081->3080
+(00.111403) mnt: 		Working on 3080->2975
+(00.111405) mnt: 		Working on 3079->2975
+(00.111408) mnt: 		Working on 3078->3077
+(00.111410) mnt: 		Working on 3077->2975
+(00.111413) mnt: 		Working on 3076->2975
+(00.111415) mnt: 		Working on 3075->3074
+(00.111418) mnt: 		Working on 3074->3073
+(00.111420) mnt: 		Working on 3073->2975
+(00.111423) mnt: 		Working on 3072->3060
+(00.111425) mnt: 		Working on 3071->3060
+(00.111427) mnt: 		Working on 3070->3060
+(00.111429) mnt: 		Working on 3069->3060
+(00.111432) mnt: 		Working on 3068->3060
+(00.111434) mnt: 		Working on 3067->3060
+(00.111436) mnt: 		Working on 3066->3060
+(00.111438) mnt: 		Working on 3065->3060
+(00.111441) mnt: 		Working on 3064->3060
+(00.111443) mnt: 		Working on 3063->3060
+(00.111445) mnt: 		Working on 3062->3060
+(00.111448) mnt: 		Working on 3061->3060
+(00.111450) mnt: 		Working on 3060->3059
+(00.111452) mnt: 		Working on 3059->3053
+(00.111454) mnt: 		Working on 3058->3056
+(00.111457) mnt: 		Working on 3057->3056
+(00.111459) mnt: 		Working on 3056->3053
+(00.111461) mnt: 		Working on 3054->3053
+(00.111463) mnt: 		Working on 3053->3052
+(00.111466) mnt: 		Working on 3052->3004
+(00.111468) mnt: 		Working on 3051->3004
+(00.111471) mnt: 		Working on 3049->3004
+(00.111473) mnt: 		Working on 3048->3004
+(00.111476) mnt: 		Working on 3047->3004
+(00.111478) mnt: 		Working on 3046->3004
+(00.111481) mnt: 		Working on 3045->3004
+(00.111483) mnt: 		Working on 3044->3004
+(00.111486) mnt: 		Working on 3043->3004
+(00.111488) mnt: 		Working on 3042->3004
+(00.111491) mnt: 		Working on 3041->3004
+(00.111493) mnt: 		Working on 3040->3004
+(00.111496) mnt: 		Working on 3039->3004
+(00.111498) mnt: 		Working on 3038->3004
+(00.111501) mnt: 		Working on 3037->3004
+(00.111503) mnt: 		Working on 3036->3004
+(00.111506) mnt: 		Working on 3035->3004
+(00.111508) mnt: 		Working on 3034->3004
+(00.111511) mnt: 		Working on 3033->3004
+(00.111513) mnt: 		Working on 3032->3004
+(00.111516) mnt: 		Working on 3031->3004
+(00.111518) mnt: 		Working on 3030->3004
+(00.111521) mnt: 		Working on 3029->3004
+(00.111523) mnt: 		Working on 3028->3004
+(00.111526) mnt: 		Working on 3027->3004
+(00.111528) mnt: 		Working on 3026->3004
+(00.111531) mnt: 		Working on 3025->3004
+(00.111533) mnt: 		Working on 3024->3004
+(00.111536) mnt: 		Working on 3023->3004
+(00.111538) mnt: 		Working on 3022->3004
+(00.111541) mnt: 		Working on 3021->3004
+(00.111546) mnt: 		Working on 3020->3004
+(00.111549) mnt: 		Working on 3019->3004
+(00.111551) mnt: 		Working on 3018->3004
+(00.111554) mnt: 		Working on 3017->3004
+(00.111556) mnt: 		Working on 3016->3004
+(00.111559) mnt: 		Working on 3015->3004
+(00.111561) mnt: 		Working on 3014->3004
+(00.111564) mnt: 		Working on 3013->3004
+(00.111566) mnt: 		Working on 3012->3004
+(00.111569) mnt: 		Working on 3011->3004
+(00.111571) mnt: 		Working on 3010->3004
+(00.111574) mnt: 		Working on 3005->3004
+(00.111593) mnt: 		Working on 3004->2975
+(00.111595) mnt: 		Working on 3003->2999
+(00.111598) mnt: 		Working on 3002->2999
+(00.111600) mnt: 		Working on 3001->2999
+(00.111603) mnt: 		Working on 3000->2999
+(00.111605) mnt: 		Working on 2999->2975
+(00.111608) mnt: 		Working on 2998->2976
+(00.111611) mnt: 		Working on 2997->2976
+(00.111613) mnt: 		Working on 2994->2976
+(00.111616) mnt: 		Working on 2993->2976
+(00.111618) mnt: 		Working on 2992->2976
+(00.111621) mnt: 		Working on 2991->2976
+(00.111623) mnt: 		Working on 2990->2978
+(00.111626) mnt: 		Working on 2989->2978
+(00.111629) mnt: 		Working on 2988->2978
+(00.111631) mnt: 		Working on 2987->2978
+(00.111634) mnt: 		Working on 2986->2978
+(00.111636) mnt: 		Working on 2985->2978
+(00.111639) mnt: 		Working on 2984->2978
+(00.111642) mnt: 		Working on 2983->2978
+(00.111644) mnt: 		Working on 2982->2978
+(00.111647) mnt: 		Working on 2981->2978
+(00.111649) mnt: 		Working on 2980->2978
+(00.111668) mnt: 		Working on 2979->2978
+(00.111671) mnt: 		Working on 2978->2976
+(00.111674) mnt: 		Working on 2977->2976
+(00.111676) mnt: 		Working on 2976->2975
+(00.111679) mnt: 		Working on 2975->2925
+(00.111682) mnt: 		Working on 2974->2962
+(00.111685) mnt: 		Working on 2973->2962
+(00.111687) mnt: 		Working on 2972->2962
+(00.111690) mnt: 		Working on 2971->2962
+(00.111693) mnt: 		Working on 2970->2962
+(00.111696) mnt: 		Working on 2969->2962
+(00.111699) mnt: 		Working on 2968->2962
+(00.111701) mnt: 		Working on 2967->2962
+(00.111704) mnt: 		Working on 2966->2962
+(00.111707) mnt: 		Working on 2965->2962
+(00.111710) mnt: 		Working on 2964->2962
+(00.111730) mnt: 		Working on 2963->2962
+(00.111733) mnt: 		Working on 2962->2961
+(00.111735) mnt: 		Working on 2961->2925
+(00.111738) mnt: 		Working on 2959->2927
+(00.111741) mnt: 		Working on 2947->2927
+(00.111744) mnt: 		Working on 2927->2925
+(00.111747) mnt: 		Working on 2926->2925
+(00.111750) mnt: 		Working on 2925->2610
+(00.111753) mnt: 	Resorting children of 2925 in mount order
+(00.111756) mnt: 	Resorting children of 3120 in mount order
+(00.111759) mnt: 	Resorting children of 3118 in mount order
+(00.111761) mnt: 	Resorting children of 3117 in mount order
+(00.111763) mnt: 	Resorting children of 3115 in mount order
+(00.111765) mnt: 	Resorting children of 2975 in mount order
+(00.111786) mnt: 	Resorting children of 3114 in mount order
+(00.111788) mnt: 	Resorting children of 3113 in mount order
+(00.111790) mnt: 	Resorting children of 3112 in mount order
+(00.111792) mnt: 	Resorting children of 3111 in mount order
+(00.111794) mnt: 	Resorting children of 3110 in mount order
+(00.111796) mnt: 	Resorting children of 3109 in mount order
+(00.111799) mnt: 	Resorting children of 3108 in mount order
+(00.111801) mnt: 	Resorting children of 3107 in mount order
+(00.111803) mnt: 	Resorting children of 3106 in mount order
+(00.111805) mnt: 	Resorting children of 3105 in mount order
+(00.111807) mnt: 	Resorting children of 3104 in mount order
+(00.111809) mnt: 	Resorting children of 3103 in mount order
+(00.111811) mnt: 	Resorting children of 3080 in mount order
+(00.111822) mnt: 	Resorting children of 3102 in mount order
+(00.111824) mnt: 	Resorting children of 3101 in mount order
+(00.111826) mnt: 	Resorting children of 3100 in mount order
+(00.111828) mnt: 	Resorting children of 3099 in mount order
+(00.111830) mnt: 	Resorting children of 3098 in mount order
+(00.111832) mnt: 	Resorting children of 3097 in mount order
+(00.111834) mnt: 	Resorting children of 3086 in mount order
+(00.111836) mnt: 	Resorting children of 3085 in mount order
+(00.111839) mnt: 	Resorting children of 3084 in mount order
+(00.111844) mnt: 	Resorting children of 3083 in mount order
+(00.111846) mnt: 	Resorting children of 3082 in mount order
+(00.111848) mnt: 	Resorting children of 3081 in mount order
+(00.111850) mnt: 	Resorting children of 3079 in mount order
+(00.111853) mnt: 	Resorting children of 3077 in mount order
+(00.111855) mnt: 	Resorting children of 3078 in mount order
+(00.111857) mnt: 	Resorting children of 3076 in mount order
+(00.111859) mnt: 	Resorting children of 3073 in mount order
+(00.111861) mnt: 	Resorting children of 3074 in mount order
+(00.111864) mnt: 	Resorting children of 3075 in mount order
+(00.111866) mnt: 	Resorting children of 3004 in mount order
+(00.111976) mnt: 	Resorting children of 3052 in mount order
+(00.111979) mnt: 	Resorting children of 3053 in mount order
+(00.111981) mnt: 	Resorting children of 3059 in mount order
+(00.111984) mnt: 	Resorting children of 3060 in mount order
+(00.111996) mnt: 	Resorting children of 3072 in mount order
+(00.111998) mnt: 	Resorting children of 3071 in mount order
+(00.112000) mnt: 	Resorting children of 3070 in mount order
+(00.112002) mnt: 	Resorting children of 3069 in mount order
+(00.112004) mnt: 	Resorting children of 3068 in mount order
+(00.112006) mnt: 	Resorting children of 3067 in mount order
+(00.112008) mnt: 	Resorting children of 3066 in mount order
+(00.112010) mnt: 	Resorting children of 3065 in mount order
+(00.112012) mnt: 	Resorting children of 3064 in mount order
+(00.112014) mnt: 	Resorting children of 3063 in mount order
+(00.112016) mnt: 	Resorting children of 3062 in mount order
+(00.112035) mnt: 	Resorting children of 3061 in mount order
+(00.112037) mnt: 	Resorting children of 3056 in mount order
+(00.112040) mnt: 	Resorting children of 3058 in mount order
+(00.112042) mnt: 	Resorting children of 3057 in mount order
+(00.112044) mnt: 	Resorting children of 3054 in mount order
+(00.112062) mnt: 	Resorting children of 3051 in mount order
+(00.112064) mnt: 	Resorting children of 3049 in mount order
+(00.112066) mnt: 	Resorting children of 3048 in mount order
+(00.112068) mnt: 	Resorting children of 3047 in mount order
+(00.112086) mnt: 	Resorting children of 3046 in mount order
+(00.112089) mnt: 	Resorting children of 3045 in mount order
+(00.112090) mnt: 	Resorting children of 3044 in mount order
+(00.112092) mnt: 	Resorting children of 3042 in mount order
+(00.112094) mnt: 	Resorting children of 3041 in mount order
+(00.112096) mnt: 	Resorting children of 3040 in mount order
+(00.112098) mnt: 	Resorting children of 3038 in mount order
+(00.112100) mnt: 	Resorting children of 3037 in mount order
+(00.112102) mnt: 	Resorting children of 3036 in mount order
+(00.112104) mnt: 	Resorting children of 3035 in mount order
+(00.112106) mnt: 	Resorting children of 3034 in mount order
+(00.112108) mnt: 	Resorting children of 3033 in mount order
+(00.112110) mnt: 	Resorting children of 3032 in mount order
+(00.112112) mnt: 	Resorting children of 3030 in mount order
+(00.112114) mnt: 	Resorting children of 3028 in mount order
+(00.112116) mnt: 	Resorting children of 3027 in mount order
+(00.112118) mnt: 	Resorting children of 3026 in mount order
+(00.112120) mnt: 	Resorting children of 3025 in mount order
+(00.112122) mnt: 	Resorting children of 3024 in mount order
+(00.112124) mnt: 	Resorting children of 3023 in mount order
+(00.112126) mnt: 	Resorting children of 3022 in mount order
+(00.112128) mnt: 	Resorting children of 3021 in mount order
+(00.112130) mnt: 	Resorting children of 3020 in mount order
+(00.112132) mnt: 	Resorting children of 3019 in mount order
+(00.112134) mnt: 	Resorting children of 3018 in mount order
+(00.112136) mnt: 	Resorting children of 3017 in mount order
+(00.112138) mnt: 	Resorting children of 3016 in mount order
+(00.112140) mnt: 	Resorting children of 3015 in mount order
+(00.112142) mnt: 	Resorting children of 3014 in mount order
+(00.112144) mnt: 	Resorting children of 3013 in mount order
+(00.112146) mnt: 	Resorting children of 3012 in mount order
+(00.112148) mnt: 	Resorting children of 3011 in mount order
+(00.112150) mnt: 	Resorting children of 3010 in mount order
+(00.112155) mnt: 	Resorting children of 3005 in mount order
+(00.112157) mnt: 	Resorting children of 3043 in mount order
+(00.112159) mnt: 	Resorting children of 3039 in mount order
+(00.112161) mnt: 	Resorting children of 3031 in mount order
+(00.112163) mnt: 	Resorting children of 3029 in mount order
+(00.112165) mnt: 	Resorting children of 2999 in mount order
+(00.112167) mnt: 	Resorting children of 3003 in mount order
+(00.112169) mnt: 	Resorting children of 3002 in mount order
+(00.112171) mnt: 	Resorting children of 3001 in mount order
+(00.112173) mnt: 	Resorting children of 3000 in mount order
+(00.112175) mnt: 	Resorting children of 2976 in mount order
+(00.112178) mnt: 	Resorting children of 2997 in mount order
+(00.112180) mnt: 	Resorting children of 2992 in mount order
+(00.112182) mnt: 	Resorting children of 2998 in mount order
+(00.112184) mnt: 	Resorting children of 2994 in mount order
+(00.112186) mnt: 	Resorting children of 2993 in mount order
+(00.112188) mnt: 	Resorting children of 2991 in mount order
+(00.112190) mnt: 	Resorting children of 2978 in mount order
+(00.112194) mnt: 	Resorting children of 2990 in mount order
+(00.112196) mnt: 	Resorting children of 2989 in mount order
+(00.112198) mnt: 	Resorting children of 2988 in mount order
+(00.112200) mnt: 	Resorting children of 2987 in mount order
+(00.112202) mnt: 	Resorting children of 2986 in mount order
+(00.112204) mnt: 	Resorting children of 2985 in mount order
+(00.112206) mnt: 	Resorting children of 2984 in mount order
+(00.112208) mnt: 	Resorting children of 2983 in mount order
+(00.112210) mnt: 	Resorting children of 2982 in mount order
+(00.112212) mnt: 	Resorting children of 2981 in mount order
+(00.112214) mnt: 	Resorting children of 2980 in mount order
+(00.112216) mnt: 	Resorting children of 2979 in mount order
+(00.112218) mnt: 	Resorting children of 2977 in mount order
+(00.112220) mnt: 	Resorting children of 2961 in mount order
+(00.112222) mnt: 	Resorting children of 2962 in mount order
+(00.112226) mnt: 	Resorting children of 2974 in mount order
+(00.112228) mnt: 	Resorting children of 2973 in mount order
+(00.112230) mnt: 	Resorting children of 2972 in mount order
+(00.112232) mnt: 	Resorting children of 2971 in mount order
+(00.112234) mnt: 	Resorting children of 2970 in mount order
+(00.112236) mnt: 	Resorting children of 2969 in mount order
+(00.112238) mnt: 	Resorting children of 2968 in mount order
+(00.112240) mnt: 	Resorting children of 2967 in mount order
+(00.112242) mnt: 	Resorting children of 2966 in mount order
+(00.112244) mnt: 	Resorting children of 2965 in mount order
+(00.112246) mnt: 	Resorting children of 2964 in mount order
+(00.112248) mnt: 	Resorting children of 2963 in mount order
+(00.112250) mnt: 	Resorting children of 2622 in mount order
+(00.112252) mnt: 	Resorting children of 2927 in mount order
+(00.112254) mnt: 	Resorting children of 3119 in mount order
+(00.112256) mnt: 	Resorting children of 3116 in mount order
+(00.112258) mnt: 	Resorting children of 2959 in mount order
+(00.112260) mnt: 	Resorting children of 2947 in mount order
+(00.112262) mnt: 	Resorting children of 2926 in mount order
+(00.112265) mnt: 	Resorting children of 2621 in mount order
+(00.112267) mnt: 	Resorting children of 2620 in mount order
+(00.112269) mnt: 	Resorting children of 2619 in mount order
+(00.112271) mnt: 	Resorting children of 2618 in mount order
+(00.112273) mnt: 	Resorting children of 2617 in mount order
+(00.112275) mnt: 	Resorting children of 2616 in mount order
+(00.112277) mnt: 	Resorting children of 2615 in mount order
+(00.112279) mnt: 	Resorting children of 2614 in mount order
+(00.112281) mnt: 	Resorting children of 2613 in mount order
+(00.112283) mnt: 	Resorting children of 2612 in mount order
+(00.112285) mnt: 	Resorting children of 2611 in mount order
+(00.112287) mnt: Done:
+(00.112289) mnt: [./](2925->2610)
+(00.112292) mnt:  [./run/secrets/kubernetes.io/serviceaccount](3120->2925)
+(00.112294) mnt:  <--
+(00.112296) mnt:  [./etc/resolv.conf](3118->2925)
+(00.112298) mnt:  <--
+(00.112300) mnt:  [./etc/hostname](3117->2925)
+(00.112302) mnt:  <--
+(00.112308) mnt:  [./etc/hosts](3115->2925)
+(00.112310) mnt:  <--
+(00.112312) mnt:  [./host](2975->2925)
+(00.112314) mnt:   [./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8](3114->2975)
+(00.112316) mnt:   <--
+(00.112318) mnt:   [./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d](3113->2975)
+(00.112320) mnt:   <--
+(00.112322) mnt:   [./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8](3112->2975)
+(00.112324) mnt:   <--
+(00.112326) mnt:   [./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk](3111->2975)
+(00.112329) mnt:   <--
+(00.112331) mnt:   [./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs](3110->2975)
+(00.112333) mnt:   <--
+(00.112335) mnt:   [./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6](3109->2975)
+(00.112337) mnt:   <--
+(00.112339) mnt:   [./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd](3108->2975)
+(00.112341) mnt:   <--
+(00.112343) mnt:   [./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf](3107->2975)
+(00.112345) mnt:   <--
+(00.112347) mnt:   [./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2](3106->2975)
+(00.112349) mnt:   <--
+(00.112351) mnt:   [./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw](3105->2975)
+(00.112353) mnt:   <--
+(00.112355) mnt:   [./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg](3104->2975)
+(00.112357) mnt:   <--
+(00.112359) mnt:   [./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume](3103->2975)
+(00.112362) mnt:   <--
+(00.112364) mnt:   [./host/var/lib/kubelet](3080->2975)
+(00.112366) mnt:    [./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8](3102->3080)
+(00.112368) mnt:    <--
+(00.112370) mnt:    [./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d](3101->3080)
+(00.112372) mnt:    <--
+(00.112374) mnt:    [./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8](3100->3080)
+(00.112376) mnt:    <--
+(00.112378) mnt:    [./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk](3099->3080)
+(00.112380) mnt:    <--
+(00.112382) mnt:    [./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs](3098->3080)
+(00.112384) mnt:    <--
+(00.112386) mnt:    [./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6](3097->3080)
+(00.112389) mnt:    <--
+(00.112390) mnt:    [./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd](3086->3080)
+(00.112393) mnt:    <--
+(00.112395) mnt:    [./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf](3085->3080)
+(00.112397) mnt:    <--
+(00.112399) mnt:    [./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2](3084->3080)
+(00.112401) mnt:    <--
+(00.112403) mnt:    [./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw](3083->3080)
+(00.112405) mnt:    <--
+(00.112407) mnt:    [./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg](3082->3080)
+(00.112412) mnt:    <--
+(00.112414) mnt:    [./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume](3081->3080)
+(00.112416) mnt:    <--
+(00.112418) mnt:   <--
+(00.112420) mnt:   [./host/mnt](3079->2975)
+(00.112422) mnt:   <--
+(00.112424) mnt:   [./host/boot](3077->2975)
+(00.112426) mnt:    [./host/boot/efi](3078->3077)
+(00.112428) mnt:    <--
+(00.112430) mnt:   <--
+(00.112432) mnt:   [./host/tmp](3076->2975)
+(00.112434) mnt:   <--
+(00.112436) mnt:   [./host/proc](3073->2975)
+(00.112438) mnt:    [./host/proc/sys/fs/binfmt_misc](3074->3073)
+(00.112441) mnt:     [./host/proc/sys/fs/binfmt_misc](3075->3074)
+(00.112443) mnt:     <--
+(00.112445) mnt:    <--
+(00.112447) mnt:   <--
+(00.112449) mnt:   [./host/run](3004->2975)
+(00.112451) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs](3052->3004)
+(00.112453) mnt:     [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs](3053->3052)
+(00.112455) mnt:      [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys](3059->3053)
+(00.112457) mnt:       [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup](3060->3059)
+(00.112460) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/perf_event](3072->3060)
+(00.112462) mnt:        <--
+(00.112464) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/rdma](3071->3060)
+(00.112466) mnt:        <--
+(00.112468) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/memory](3070->3060)
+(00.112470) mnt:        <--
+(00.112472) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/pids](3069->3060)
+(00.112474) mnt:        <--
+(00.112476) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/hugetlb](3068->3060)
+(00.112478) mnt:        <--
+(00.112480) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/freezer](3067->3060)
+(00.112482) mnt:        <--
+(00.112484) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpuset](3066->3060)
+(00.112486) mnt:        <--
+(00.112488) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/devices](3065->3060)
+(00.112490) mnt:        <--
+(00.112492) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/blkio](3064->3060)
+(00.112494) mnt:        <--
+(00.112496) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/net_cls,net_prio](3063->3060)
+(00.112499) mnt:        <--
+(00.112501) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpu,cpuacct](3062->3060)
+(00.112503) mnt:        <--
+(00.112505) mnt:        [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/systemd](3061->3060)
+(00.112509) mnt:        <--
+(00.112511) mnt:       <--
+(00.112513) mnt:      <--
+(00.112515) mnt:      [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev](3056->3053)
+(00.112518) mnt:       [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/mqueue](3058->3056)
+(00.112520) mnt:       <--
+(00.112522) mnt:       [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/pts](3057->3056)
+(00.112524) mnt:       <--
+(00.112526) mnt:      <--
+(00.112528) mnt:      [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/proc](3054->3053)
+(00.112530) mnt:      <--
+(00.112532) mnt:     <--
+(00.112534) mnt:    <--
+(00.112536) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b93a89fbb89fb264c2fa89c3e59841bace07c8118f3a895c6a6dc20caaa2196e/rootfs](3051->3004)
+(00.112538) mnt:    <--
+(00.112540) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2d6e8ffe81cacb6dcdf16855041eea8e7ac7a231ccb76a2be8132e5129d91861/rootfs](3049->3004)
+(00.112542) mnt:    <--
+(00.112544) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/80a3a426d244051cb0da9529446ae8eac7c9ef6dda3c949534cd86fbbe8ba96d/rootfs](3048->3004)
+(00.112546) mnt:    <--
+(00.112548) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/rootfs](3047->3004)
+(00.112550) mnt:    <--
+(00.112552) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/shm](3046->3004)
+(00.112554) mnt:    <--
+(00.112556) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5ffd06929c6aaa18270806dc1fbb7ef05c78b519856bc8806e64569151f60c62/rootfs](3045->3004)
+(00.112559) mnt:    <--
+(00.112560) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/rootfs](3044->3004)
+(00.112563) mnt:    <--
+(00.112565) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/shm](3042->3004)
+(00.112567) mnt:    <--
+(00.112569) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4a668ab5044639aea6a050f3895eb17c63d7c73f48673a8c812935c5c671f0be/rootfs](3041->3004)
+(00.112571) mnt:    <--
+(00.112573) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/rootfs](3040->3004)
+(00.112575) mnt:    <--
+(00.112593) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/shm](3038->3004)
+(00.112595) mnt:    <--
+(00.112597) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c0b5da536e5cd940698b84baaa55cb4bb44fc098c9bcd51a17fc0a146930981/rootfs](3037->3004)
+(00.112599) mnt:    <--
+(00.112601) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/d0d434ba510bb0093e46e98c9a7b1acd61b5085d9c3c18d570a9e8c20a2209c8/rootfs](3036->3004)
+(00.112603) mnt:    <--
+(00.112606) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/60cc48a78f3c68f02586c1bfa04087675cee2a51fbc0f1b5ad2a8f44d1af1472/rootfs](3035->3004)
+(00.112608) mnt:    <--
+(00.112610) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/58cdfa84e9f97fecba59db9264033accde61bf9c3d55ca4582518c5f16a6e792/rootfs](3034->3004)
+(00.112612) mnt:    <--
+(00.112614) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/rootfs](3033->3004)
+(00.112616) mnt:    <--
+(00.112618) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/rootfs](3032->3004)
+(00.112623) mnt:    <--
+(00.112625) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/shm](3030->3004)
+(00.112628) mnt:    <--
+(00.112630) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/shm](3028->3004)
+(00.112632) mnt:    <--
+(00.112634) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a5de98c62e6298d046dd3574558192e9aa8990ac2ec22718c06d6e0f8b9e051e/rootfs](3027->3004)
+(00.112636) mnt:    <--
+(00.112638) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/fc422631daabd60cfc9d2e4ff2b4313184bde0f86e597f83695cbf52a35022f7/rootfs](3026->3004)
+(00.112640) mnt:    <--
+(00.112642) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/821da0e48f34cca9b1802177e96fdff0298dfb1b4b2ac2c64172883333f64659/rootfs](3025->3004)
+(00.112644) mnt:    <--
+(00.112646) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5277ddcb8351bc11c0457ccd37392fda786160a775cfd0cb9fd81dd247881346/rootfs](3024->3004)
+(00.112649) mnt:    <--
+(00.112651) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/c5663584ea24ba9f59088123c54a516fdb6c86f7b043891dfe091a9e094f6c16/rootfs](3023->3004)
+(00.112653) mnt:    <--
+(00.112655) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a52bd5a10e5e893ca54a1b1c27c935e2f77a70492907c36a4eeda93efba5e627/rootfs](3022->3004)
+(00.112657) mnt:    <--
+(00.112659) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b71bc9849f6163f7a1d8c188d3b6c564be60a17cf99201bf908a21a06f1fd53d/rootfs](3021->3004)
+(00.112661) mnt:    <--
+(00.112663) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b74f5caeb6d153377934b14b0555040fed1353980508074ac00567184ab586d5/rootfs](3020->3004)
+(00.112665) mnt:    <--
+(00.112667) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ec811e544f60b7f3325344c17c8b6bdce45c5fa78f29e3462f3c8f2f0fe86966/rootfs](3019->3004)
+(00.112670) mnt:    <--
+(00.112694) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/rootfs](3018->3004)
+(00.112697) mnt:    <--
+(00.112699) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/shm](3017->3004)
+(00.112701) mnt:    <--
+(00.112703) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/rootfs](3016->3004)
+(00.112705) mnt:    <--
+(00.112707) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/rootfs](3015->3004)
+(00.112710) mnt:    <--
+(00.112712) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/rootfs](3014->3004)
+(00.112714) mnt:    <--
+(00.112716) mnt:    [./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/rootfs](3013->3004)
+(00.112718) mnt:    <--
+(00.112720) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/shm](3012->3004)
+(00.112722) mnt:    <--
+(00.112724) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/shm](3011->3004)
+(00.112726) mnt:    <--
+(00.112728) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/shm](3010->3004)
+(00.112731) mnt:    <--
+(00.112733) mnt:    [./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/shm](3005->3004)
+(00.112735) mnt:    <--
+(00.112737) mnt:    [./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef](3043->3004)
+(00.112743) mnt:    <--
+(00.112745) mnt:    [./host/run/netns/cni-20cc5531-acb7-bc0c-f2bb-99d5439d3521](3039->3004)
+(00.112748) mnt:    <--
+(00.112750) mnt:    [./host/run/netns/cni-a1c9fa64-828a-d938-b75a-eeeef219c9e6](3031->3004)
+(00.112752) mnt:    <--
+(00.112754) mnt:    [./host/run/netns/cni-d95cde20-3d90-1316-16ef-1be079fc9c10](3029->3004)
+(00.112756) mnt:    <--
+(00.112758) mnt:   <--
+(00.112760) mnt:   [./host/dev](2999->2975)
+(00.112763) mnt:    [./host/dev/mqueue](3003->2999)
+(00.112765) mnt:    <--
+(00.112767) mnt:    [./host/dev/hugepages](3002->2999)
+(00.112769) mnt:    <--
+(00.112771) mnt:    [./host/dev/pts](3001->2999)
+(00.112773) mnt:    <--
+(00.112776) mnt:    [./host/dev/shm](3000->2999)
+(00.112778) mnt:    <--
+(00.112780) mnt:   <--
+(00.112782) mnt:   [./host/sys](2976->2975)
+(00.112784) mnt:    [./host/sys/fs/fuse/connections](2997->2976)
+(00.112786) mnt:    <--
+(00.112788) mnt:    [./host/sys/firmware/efi/efivars](2992->2976)
+(00.112791) mnt:    <--
+(00.112793) mnt:    [./host/sys/kernel/config](2998->2976)
+(00.112795) mnt:    <--
+(00.112797) mnt:    [./host/sys/kernel/debug](2994->2976)
+(00.112799) mnt:    <--
+(00.112801) mnt:    [./host/sys/fs/bpf](2993->2976)
+(00.112803) mnt:    <--
+(00.112805) mnt:    [./host/sys/fs/pstore](2991->2976)
+(00.112807) mnt:    <--
+(00.112809) mnt:    [./host/sys/fs/cgroup](2978->2976)
+(00.112812) mnt:     [./host/sys/fs/cgroup/perf_event](2990->2978)
+(00.112814) mnt:     <--
+(00.112816) mnt:     [./host/sys/fs/cgroup/rdma](2989->2978)
+(00.112818) mnt:     <--
+(00.112820) mnt:     [./host/sys/fs/cgroup/memory](2988->2978)
+(00.112822) mnt:     <--
+(00.112825) mnt:     [./host/sys/fs/cgroup/pids](2987->2978)
+(00.112827) mnt:     <--
+(00.112829) mnt:     [./host/sys/fs/cgroup/hugetlb](2986->2978)
+(00.112831) mnt:     <--
+(00.112833) mnt:     [./host/sys/fs/cgroup/freezer](2985->2978)
+(00.112835) mnt:     <--
+(00.112837) mnt:     [./host/sys/fs/cgroup/cpuset](2984->2978)
+(00.112839) mnt:     <--
+(00.112841) mnt:     [./host/sys/fs/cgroup/devices](2983->2978)
+(00.112844) mnt:     <--
+(00.112846) mnt:     [./host/sys/fs/cgroup/blkio](2982->2978)
+(00.112848) mnt:     <--
+(00.112850) mnt:     [./host/sys/fs/cgroup/net_cls,net_prio](2981->2978)
+(00.112852) mnt:     <--
+(00.112854) mnt:     [./host/sys/fs/cgroup/cpu,cpuacct](2980->2978)
+(00.112856) mnt:     <--
+(00.112858) mnt:     [./host/sys/fs/cgroup/systemd](2979->2978)
+(00.112860) mnt:     <--
+(00.112862) mnt:    <--
+(00.112864) mnt:    [./host/sys/kernel/security](2977->2976)
+(00.112867) mnt:    <--
+(00.112869) mnt:   <--
+(00.112871) mnt:  <--
+(00.112873) mnt:  [./sys](2961->2925)
+(00.112875) mnt:   [./sys/fs/cgroup](2962->2961)
+(00.112877) mnt:    [./sys/fs/cgroup/perf_event](2974->2962)
+(00.112880) mnt:    <--
+(00.112882) mnt:    [./sys/fs/cgroup/rdma](2973->2962)
+(00.112884) mnt:    <--
+(00.112886) mnt:    [./sys/fs/cgroup/memory](2972->2962)
+(00.112888) mnt:    <--
+(00.112890) mnt:    [./sys/fs/cgroup/pids](2971->2962)
+(00.112892) mnt:    <--
+(00.112894) mnt:    [./sys/fs/cgroup/hugetlb](2970->2962)
+(00.112897) mnt:    <--
+(00.112899) mnt:    [./sys/fs/cgroup/freezer](2969->2962)
+(00.112901) mnt:    <--
+(00.112903) mnt:    [./sys/fs/cgroup/cpuset](2968->2962)
+(00.112905) mnt:    <--
+(00.112907) mnt:    [./sys/fs/cgroup/devices](2967->2962)
+(00.112909) mnt:    <--
+(00.112911) mnt:    [./sys/fs/cgroup/blkio](2966->2962)
+(00.112913) mnt:    <--
+(00.112915) mnt:    [./sys/fs/cgroup/net_cls,net_prio](2965->2962)
+(00.112918) mnt:    <--
+(00.112920) mnt:    [./sys/fs/cgroup/cpu,cpuacct](2964->2962)
+(00.112922) mnt:    <--
+(00.112924) mnt:    [./sys/fs/cgroup/systemd](2963->2962)
+(00.112926) mnt:    <--
+(00.112928) mnt:   <--
+(00.112930) mnt:   [./sys/firmware](2622->2961)
+(00.112932) mnt:   <--
+(00.112934) mnt:  <--
+(00.112936) mnt:  [./dev](2927->2925)
+(00.112939) mnt:   [./dev/shm](3119->2927)
+(00.112941) mnt:   <--
+(00.112943) mnt:   [./dev/termination-log](3116->2927)
+(00.112945) mnt:   <--
+(00.112947) mnt:   [./dev/mqueue](2959->2927)
+(00.112949) mnt:   <--
+(00.112951) mnt:   [./dev/pts](2947->2927)
+(00.112958) mnt:   <--
+(00.112960) mnt:  <--
+(00.112962) mnt:  [./proc](2926->2925)
+(00.112964) mnt:   [./proc/scsi](2621->2926)
+(00.112966) mnt:   <--
+(00.112968) mnt:   [./proc/timer_list](2620->2926)
+(00.112970) mnt:   <--
+(00.112972) mnt:   [./proc/latency_stats](2619->2926)
+(00.112975) mnt:   <--
+(00.112977) mnt:   [./proc/keys](2618->2926)
+(00.112979) mnt:   <--
+(00.112981) mnt:   [./proc/kcore](2617->2926)
+(00.112983) mnt:   <--
+(00.112985) mnt:   [./proc/acpi](2616->2926)
+(00.112987) mnt:   <--
+(00.112989) mnt:   [./proc/sysrq-trigger](2615->2926)
+(00.112992) mnt:   <--
+(00.112994) mnt:   [./proc/sys](2614->2926)
+(00.112996) mnt:   <--
+(00.112998) mnt:   [./proc/irq](2613->2926)
+(00.113000) mnt:   <--
+(00.113002) mnt:   [./proc/fs](2612->2926)
+(00.113004) mnt:   <--
+(00.113006) mnt:   [./proc/bus](2611->2926)
+(00.113008) mnt:   <--
+(00.113010) mnt:  <--
+(00.113012) mnt: <--
+(00.113026) mnt: 	The mount 2619 is bind for 2620 (@./proc/latency_stats -> @./proc/timer_list)
+(00.113032) mnt: 	The mount 2618 is bind for 2620 (@./proc/keys -> @./proc/timer_list)
+(00.113034) mnt: 	The mount 2617 is bind for 2620 (@./proc/kcore -> @./proc/timer_list)
+(00.113037) mnt: 	The mount 3056 is bind for 2620 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev -> @./proc/timer_list)
+(00.113040) mnt: 	The mount 2927 is bind for 2620 (@./dev -> @./proc/timer_list)
+(00.113043) mnt: 	The mount 2614 is bind for 2615 (@./proc/sys -> @./proc/sysrq-trigger)
+(00.113045) mnt: 	The mount 2613 is bind for 2615 (@./proc/irq -> @./proc/sysrq-trigger)
+(00.113048) mnt: 	The mount 2612 is bind for 2615 (@./proc/fs -> @./proc/sysrq-trigger)
+(00.113050) mnt: 	The mount 2611 is bind for 2615 (@./proc/bus -> @./proc/sysrq-trigger)
+(00.113052) mnt: 	The mount 3054 is bind for 2615 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/proc -> @./proc/sysrq-trigger)
+(00.113055) mnt: 	The mount 2926 is bind for 2615 (@./proc -> @./proc/sysrq-trigger)
+(00.113057) mnt: 	The mount 3114 is bind for 3120 (@./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8 -> @./run/secrets/kubernetes.io/serviceaccount)
+(00.113060) mnt: 	The mount 3102 is bind for 3120 (@./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8 -> @./run/secrets/kubernetes.io/serviceaccount)
+(00.113063) mnt: 	The mount 3000 is bind for 3119 (@./host/dev/shm -> @./dev/shm)
+(00.113066) mnt: 	The mount 3117 is bind for 3118 (@./etc/hostname -> @./etc/resolv.conf)
+(00.113068) mnt: 	The mount 3116 is bind for 3118 (@./dev/termination-log -> @./etc/resolv.conf)
+(00.113070) mnt: 	The mount 3115 is bind for 3118 (@./etc/hosts -> @./etc/resolv.conf)
+(00.113072) mnt: 	The mount 3080 is bind for 3118 (@./host/var/lib/kubelet -> @./etc/resolv.conf)
+(00.113075) mnt: 	The mount 2975 is bind for 3118 (@./host -> @./etc/resolv.conf)
+(00.113078) mnt: 	The mount 3101 is bind for 3113 (@./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d -> @./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d)
+(00.113081) mnt: 	The mount 3100 is bind for 3112 (@./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8 -> @./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8)
+(00.113083) mnt: 	The mount 3099 is bind for 3111 (@./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk -> @./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk)
+(00.113086) mnt: 	The mount 3098 is bind for 3110 (@./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs -> @./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs)
+(00.113094) mnt: 	The mount 3097 is bind for 3109 (@./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6 -> @./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6)
+(00.113097) mnt: 	The mount 3086 is bind for 3108 (@./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd -> @./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd)
+(00.113100) mnt: 	The mount 3085 is bind for 3107 (@./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf -> @./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf)
+(00.113103) mnt: 	The mount 3084 is bind for 3106 (@./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2 -> @./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2)
+(00.113105) mnt: 	The mount 3083 is bind for 3105 (@./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw -> @./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw)
+(00.113108) mnt: 	The mount 3082 is bind for 3104 (@./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg -> @./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg)
+(00.113111) mnt: 	The mount 3081 is bind for 3103 (@./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume -> @./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume)
+(00.113116) mnt: 	The mount 2990 is bind for 3072 (@./host/sys/fs/cgroup/perf_event -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/perf_event)
+(00.113118) mnt: 	The mount 2974 is bind for 3072 (@./sys/fs/cgroup/perf_event -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/perf_event)
+(00.113121) mnt: 	The mount 2989 is bind for 3071 (@./host/sys/fs/cgroup/rdma -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/rdma)
+(00.113124) mnt: 	The mount 2973 is bind for 3071 (@./sys/fs/cgroup/rdma -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/rdma)
+(00.113126) mnt: 	The mount 2988 is bind for 3070 (@./host/sys/fs/cgroup/memory -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/memory)
+(00.113129) mnt: 	The mount 2972 is bind for 3070 (@./sys/fs/cgroup/memory -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/memory)
+(00.113131) mnt: 	The mount 2987 is bind for 3069 (@./host/sys/fs/cgroup/pids -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/pids)
+(00.113134) mnt: 	The mount 2971 is bind for 3069 (@./sys/fs/cgroup/pids -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/pids)
+(00.113141) mnt: 	The mount 2986 is bind for 3068 (@./host/sys/fs/cgroup/hugetlb -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/hugetlb)
+(00.113144) mnt: 	The mount 2970 is bind for 3068 (@./sys/fs/cgroup/hugetlb -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/hugetlb)
+(00.113146) mnt: 	The mount 2985 is bind for 3067 (@./host/sys/fs/cgroup/freezer -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/freezer)
+(00.113149) mnt: 	The mount 2969 is bind for 3067 (@./sys/fs/cgroup/freezer -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/freezer)
+(00.113151) mnt: 	The mount 2984 is bind for 3066 (@./host/sys/fs/cgroup/cpuset -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpuset)
+(00.113154) mnt: 	The mount 2968 is bind for 3066 (@./sys/fs/cgroup/cpuset -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpuset)
+(00.113156) mnt: 	The mount 2983 is bind for 3065 (@./host/sys/fs/cgroup/devices -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/devices)
+(00.113159) mnt: 	The mount 2967 is bind for 3065 (@./sys/fs/cgroup/devices -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/devices)
+(00.113161) mnt: 	The mount 2982 is bind for 3064 (@./host/sys/fs/cgroup/blkio -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/blkio)
+(00.113163) mnt: 	The mount 2966 is bind for 3064 (@./sys/fs/cgroup/blkio -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/blkio)
+(00.113166) mnt: 	The mount 2981 is bind for 3063 (@./host/sys/fs/cgroup/net_cls,net_prio -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/net_cls,net_prio)
+(00.113168) mnt: 	The mount 2965 is bind for 3063 (@./sys/fs/cgroup/net_cls,net_prio -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/net_cls,net_prio)
+(00.113171) mnt: 	The mount 2980 is bind for 3062 (@./host/sys/fs/cgroup/cpu,cpuacct -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpu,cpuacct)
+(00.113173) mnt: 	The mount 2964 is bind for 3062 (@./sys/fs/cgroup/cpu,cpuacct -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpu,cpuacct)
+(00.113176) mnt: 	The mount 2979 is bind for 3061 (@./host/sys/fs/cgroup/systemd -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/systemd)
+(00.113178) mnt: 	The mount 2963 is bind for 3061 (@./sys/fs/cgroup/systemd -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/systemd)
+(00.113181) mnt: 	The mount 2962 is bind for 3060 (@./sys/fs/cgroup -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup)
+(00.113184) mnt: 	The mount 2976 is bind for 3059 (@./host/sys -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys)
+(00.113189) mnt: 	The mount 2961 is bind for 3059 (@./sys -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys)
+(00.113192) mnt: 	The mount 3003 is bind for 3058 (@./host/dev/mqueue -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/mqueue)
+(00.113194) mnt: 	The mount 2959 is bind for 3058 (@./dev/mqueue -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/mqueue)
+(00.113197) mnt: 	The mount 2947 is bind for 3057 (@./dev/pts -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/pts)
+(00.113199) mnt: 	The mount 3052 is bind for 3053 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs)
+(00.113202) mnt: 	The mount 2925 is bind for 3053 (@./ -> @./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs)
+(00.113206) mnt: 	The mount 3039 is bind for 3043 (@./host/run/netns/cni-20cc5531-acb7-bc0c-f2bb-99d5439d3521 -> @./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef)
+(00.113208) mnt: 	The mount 3031 is bind for 3043 (@./host/run/netns/cni-a1c9fa64-828a-d938-b75a-eeeef219c9e6 -> @./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef)
+(00.113211) mnt: 	The mount 3029 is bind for 3043 (@./host/run/netns/cni-d95cde20-3d90-1316-16ef-1be079fc9c10 -> @./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef)
+(00.113225) mnt: Found /dev/null mapping for ./proc/timer_list mountpoint
+(00.113227) mnt: Found /dev/null mapping for ./proc/latency_stats mountpoint
+(00.113230) mnt: Found /dev/null mapping for ./proc/keys mountpoint
+(00.113232) mnt: Found /dev/null mapping for ./proc/kcore mountpoint
+(00.113237) mnt: Found /run/secrets/kubernetes.io/serviceaccount mapping for ./run/secrets/kubernetes.io/serviceaccount mountpoint
+(00.113240) mnt: Found /dev/shm mapping for ./dev/shm mountpoint
+(00.113242) mnt: Found /etc/resolv.conf mapping for ./etc/resolv.conf mountpoint
+(00.113244) mnt: Found /etc/hostname mapping for ./etc/hostname mountpoint
+(00.113247) mnt: Found /dev/termination-log mapping for ./dev/termination-log mountpoint
+(00.113249) mnt: Found /etc/hosts mapping for ./etc/hosts mountpoint
+(00.113303) mnt: Found /host mapping for ./host mountpoint
+(00.113305) mnt: Found /sys/fs/cgroup/perf_event mapping for ./sys/fs/cgroup/perf_event mountpoint
+(00.113308) mnt: Found /sys/fs/cgroup/rdma mapping for ./sys/fs/cgroup/rdma mountpoint
+(00.113310) mnt: Found /sys/fs/cgroup/memory mapping for ./sys/fs/cgroup/memory mountpoint
+(00.113313) mnt: Found /sys/fs/cgroup/pids mapping for ./sys/fs/cgroup/pids mountpoint
+(00.113315) mnt: Found /sys/fs/cgroup/hugetlb mapping for ./sys/fs/cgroup/hugetlb mountpoint
+(00.113317) mnt: Found /sys/fs/cgroup/freezer mapping for ./sys/fs/cgroup/freezer mountpoint
+(00.113320) mnt: Found /sys/fs/cgroup/cpuset mapping for ./sys/fs/cgroup/cpuset mountpoint
+(00.113322) mnt: Found /sys/fs/cgroup/devices mapping for ./sys/fs/cgroup/devices mountpoint
+(00.113324) mnt: Found /sys/fs/cgroup/blkio mapping for ./sys/fs/cgroup/blkio mountpoint
+(00.113327) mnt: Found /sys/fs/cgroup/net_cls,net_prio mapping for ./sys/fs/cgroup/net_cls,net_prio mountpoint
+(00.113329) mnt: Found /sys/fs/cgroup/cpu,cpuacct mapping for ./sys/fs/cgroup/cpu,cpuacct mountpoint
+(00.113331) mnt: Found /sys/fs/cgroup/systemd mapping for ./sys/fs/cgroup/systemd mountpoint
+(00.113336) mnt: Inspecting sharing on 2622 shared_id 0 master_id 0 (@./sys/firmware)
+(00.113343) mnt: Inspecting sharing on 2621 shared_id 0 master_id 0 (@./proc/scsi)
+(00.113345) mnt: Inspecting sharing on 2620 shared_id 0 master_id 0 (@./proc/timer_list)
+(00.113347) mnt: Inspecting sharing on 2619 shared_id 0 master_id 0 (@./proc/latency_stats)
+(00.113350) mnt: Inspecting sharing on 2618 shared_id 0 master_id 0 (@./proc/keys)
+(00.113352) mnt: Inspecting sharing on 2617 shared_id 0 master_id 0 (@./proc/kcore)
+(00.113354) mnt: Inspecting sharing on 2616 shared_id 0 master_id 0 (@./proc/acpi)
+(00.113356) mnt: Inspecting sharing on 2615 shared_id 0 master_id 0 (@./proc/sysrq-trigger)
+(00.113358) mnt: Inspecting sharing on 2614 shared_id 0 master_id 0 (@./proc/sys)
+(00.113360) mnt: Inspecting sharing on 2613 shared_id 0 master_id 0 (@./proc/irq)
+(00.113363) mnt: Inspecting sharing on 2612 shared_id 0 master_id 0 (@./proc/fs)
+(00.113365) mnt: Inspecting sharing on 2611 shared_id 0 master_id 0 (@./proc/bus)
+(00.113367) mnt: Inspecting sharing on 3120 shared_id 0 master_id 0 (@./run/secrets/kubernetes.io/serviceaccount)
+(00.113369) mnt: Inspecting sharing on 3119 shared_id 0 master_id 0 (@./dev/shm)
+(00.113371) mnt: Inspecting sharing on 3118 shared_id 0 master_id 0 (@./etc/resolv.conf)
+(00.113373) mnt: Inspecting sharing on 3117 shared_id 0 master_id 0 (@./etc/hostname)
+(00.113376) mnt: Inspecting sharing on 3116 shared_id 0 master_id 0 (@./dev/termination-log)
+(00.113378) mnt: Inspecting sharing on 3115 shared_id 0 master_id 0 (@./etc/hosts)
+(00.113380) mnt: Inspecting sharing on 3114 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8)
+(00.113382) mnt: Inspecting sharing on 3113 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d)
+(00.113384) mnt: Inspecting sharing on 3112 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8)
+(00.113387) mnt: Inspecting sharing on 3111 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk)
+(00.113389) mnt: Inspecting sharing on 3110 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs)
+(00.113391) mnt: Inspecting sharing on 3109 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6)
+(00.113393) mnt: Inspecting sharing on 3108 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd)
+(00.113395) mnt: Inspecting sharing on 3107 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf)
+(00.113397) mnt: Inspecting sharing on 3106 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2)
+(00.113400) mnt: Inspecting sharing on 3105 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw)
+(00.113402) mnt: Inspecting sharing on 3104 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg)
+(00.113404) mnt: Inspecting sharing on 3103 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume)
+(00.113406) mnt: Inspecting sharing on 3102 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/64967451-648d-4859-9974-c7c4101d40d3/volumes/kubernetes.io~projected/kube-api-access-wxxm8)
+(00.113408) mnt: Inspecting sharing on 3101 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/95e29a63-0402-4d4a-b41a-481c13e9d3c4/volumes/kubernetes.io~projected/kube-api-access-2cb5d)
+(00.113415) mnt: Inspecting sharing on 3100 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/cae66d3d-069f-476f-8bbc-edabb3f11361/volumes/kubernetes.io~projected/kube-api-access-jfvz8)
+(00.113417) mnt: Inspecting sharing on 3099 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/1ec3046a-fd25-42c2-850a-6c4423a5872a/volumes/kubernetes.io~projected/kube-api-access-jr7bk)
+(00.113419) mnt: Inspecting sharing on 3098 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/3d8ca5da-a69f-45bd-96ad-d627607cb4e1/volumes/kubernetes.io~secret/certs)
+(00.113422) mnt: Inspecting sharing on 3097 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/291d5280-8a69-4cd8-acd9-218eb700d9b1/volumes/kubernetes.io~projected/kube-api-access-7qwb6)
+(00.113424) mnt: Inspecting sharing on 3086 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/85fc1209-7ee0-4cc6-ae8b-e30d8aa2871c/volumes/kubernetes.io~projected/kube-api-access-bxpcd)
+(00.113426) mnt: Inspecting sharing on 3085 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/fcd9ac59-535f-452a-a16f-a211287f59a8/volumes/kubernetes.io~projected/kube-api-access-cb7vf)
+(00.113428) mnt: Inspecting sharing on 3084 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/3584e5db-266f-40df-85f3-3831e05b45e8/volumes/kubernetes.io~projected/kube-api-access-blml2)
+(00.113430) mnt: Inspecting sharing on 3083 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/9de1ea93-a762-4d06-b033-59add8f64ea9/volumes/kubernetes.io~projected/kube-api-access-7r8vw)
+(00.113432) mnt: Inspecting sharing on 3082 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/47172ba8-60dc-4c6c-83b6-b99cd1340a3f/volumes/kubernetes.io~projected/kube-api-access-bgzqg)
+(00.113435) mnt: Inspecting sharing on 3081 shared_id 0 master_id 0 (@./host/var/lib/kubelet/pods/c62629ad-d96c-46e8-8ed7-1edd38124760/volumes/kubernetes.io~projected/azure-ip-masq-agent-config-volume)
+(00.113437) mnt: Inspecting sharing on 3080 shared_id 0 master_id 0 (@./host/var/lib/kubelet)
+(00.113439) mnt: Inspecting sharing on 3079 shared_id 0 master_id 0 (@./host/mnt)
+(00.113441) mnt: Inspecting sharing on 3078 shared_id 0 master_id 0 (@./host/boot/efi)
+(00.113443) mnt: Inspecting sharing on 3077 shared_id 0 master_id 0 (@./host/boot)
+(00.113446) mnt: Inspecting sharing on 3076 shared_id 0 master_id 0 (@./host/tmp)
+(00.113448) mnt: Inspecting sharing on 3075 shared_id 0 master_id 0 (@./host/proc/sys/fs/binfmt_misc)
+(00.113450) mnt: Inspecting sharing on 3074 shared_id 0 master_id 0 (@./host/proc/sys/fs/binfmt_misc)
+(00.113452) mnt: Inspecting sharing on 3073 shared_id 0 master_id 0 (@./host/proc)
+(00.113454) mnt: Inspecting sharing on 3072 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/perf_event)
+(00.113456) mnt: Inspecting sharing on 3071 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/rdma)
+(00.113459) mnt: Inspecting sharing on 3070 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/memory)
+(00.113461) mnt: Inspecting sharing on 3069 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/pids)
+(00.113463) mnt: Inspecting sharing on 3068 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/hugetlb)
+(00.113465) mnt: Inspecting sharing on 3067 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/freezer)
+(00.113467) mnt: Inspecting sharing on 3066 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpuset)
+(00.113473) mnt: Inspecting sharing on 3065 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/devices)
+(00.113475) mnt: Inspecting sharing on 3064 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/blkio)
+(00.113478) mnt: Inspecting sharing on 3063 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/net_cls,net_prio)
+(00.113480) mnt: Inspecting sharing on 3062 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/cpu,cpuacct)
+(00.113482) mnt: Inspecting sharing on 3061 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup/systemd)
+(00.113484) mnt: Inspecting sharing on 3060 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys/fs/cgroup)
+(00.113486) mnt: Inspecting sharing on 3059 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/sys)
+(00.113489) mnt: Inspecting sharing on 3058 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/mqueue)
+(00.113491) mnt: Inspecting sharing on 3057 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev/pts)
+(00.113493) mnt: Inspecting sharing on 3056 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/dev)
+(00.113495) mnt: Inspecting sharing on 3054 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs/proc)
+(00.113497) mnt: Inspecting sharing on 3053 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs)
+(00.113499) mnt: Inspecting sharing on 3052 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/8ea494484c96cabe56c5595fda1e3cf3555bf5ecbc1876c9680f0c7a2f60d00f/rootfs)
+(00.113501) mnt: Inspecting sharing on 3051 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b93a89fbb89fb264c2fa89c3e59841bace07c8118f3a895c6a6dc20caaa2196e/rootfs)
+(00.113504) mnt: Inspecting sharing on 3049 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2d6e8ffe81cacb6dcdf16855041eea8e7ac7a231ccb76a2be8132e5129d91861/rootfs)
+(00.113506) mnt: Inspecting sharing on 3048 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/80a3a426d244051cb0da9529446ae8eac7c9ef6dda3c949534cd86fbbe8ba96d/rootfs)
+(00.113508) mnt: Inspecting sharing on 3047 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/rootfs)
+(00.113510) mnt: Inspecting sharing on 3046 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/57a962465ad2d04b6a1c9f7da5c4124e5d98d6242f12adf9e559d0087d47eaa2/shm)
+(00.113512) mnt: Inspecting sharing on 3045 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5ffd06929c6aaa18270806dc1fbb7ef05c78b519856bc8806e64569151f60c62/rootfs)
+(00.113518) mnt: Inspecting sharing on 3044 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/rootfs)
+(00.113520) mnt: Inspecting sharing on 3043 shared_id 0 master_id 0 (@./host/run/netns/cni-1ca265b7-3e08-34dc-bb67-12a4348509ef)
+(00.113522) mnt: Inspecting sharing on 3042 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/44b270b21fd1ee84b8726725403c3e7396c2d4d8ce162fd85bcc57b1e03a549e/shm)
+(00.113524) mnt: Inspecting sharing on 3041 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4a668ab5044639aea6a050f3895eb17c63d7c73f48673a8c812935c5c671f0be/rootfs)
+(00.113527) mnt: Inspecting sharing on 3040 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/rootfs)
+(00.113529) mnt: Inspecting sharing on 3039 shared_id 0 master_id 0 (@./host/run/netns/cni-20cc5531-acb7-bc0c-f2bb-99d5439d3521)
+(00.113531) mnt: Inspecting sharing on 3038 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/2e14414f8a2d850463f4a9ef08cccd24f2559583ed89ac30bb291c6677ac8095/shm)
+(00.113533) mnt: Inspecting sharing on 3037 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c0b5da536e5cd940698b84baaa55cb4bb44fc098c9bcd51a17fc0a146930981/rootfs)
+(00.113535) mnt: Inspecting sharing on 3036 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/d0d434ba510bb0093e46e98c9a7b1acd61b5085d9c3c18d570a9e8c20a2209c8/rootfs)
+(00.113555) mnt: Inspecting sharing on 3035 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/60cc48a78f3c68f02586c1bfa04087675cee2a51fbc0f1b5ad2a8f44d1af1472/rootfs)
+(00.113557) mnt: Inspecting sharing on 3034 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/58cdfa84e9f97fecba59db9264033accde61bf9c3d55ca4582518c5f16a6e792/rootfs)
+(00.113559) mnt: Inspecting sharing on 3033 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/rootfs)
+(00.113561) mnt: Inspecting sharing on 3032 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/rootfs)
+(00.113563) mnt: Inspecting sharing on 3031 shared_id 0 master_id 0 (@./host/run/netns/cni-a1c9fa64-828a-d938-b75a-eeeef219c9e6)
+(00.113566) mnt: Inspecting sharing on 3030 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/ad37554cf73fa91d8309600ec43c6b20d4f9137b7b92a4534fbb43b21fac3a14/shm)
+(00.113568) mnt: Inspecting sharing on 3029 shared_id 0 master_id 0 (@./host/run/netns/cni-d95cde20-3d90-1316-16ef-1be079fc9c10)
+(00.113570) mnt: Inspecting sharing on 3028 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/1c72f2b945e5383f9d81d2d2606745804911c8474b04449b6ed2ac8fe16b5e91/shm)
+(00.113572) mnt: Inspecting sharing on 3027 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a5de98c62e6298d046dd3574558192e9aa8990ac2ec22718c06d6e0f8b9e051e/rootfs)
+(00.113574) mnt: Inspecting sharing on 3026 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/fc422631daabd60cfc9d2e4ff2b4313184bde0f86e597f83695cbf52a35022f7/rootfs)
+(00.113576) mnt: Inspecting sharing on 3025 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/821da0e48f34cca9b1802177e96fdff0298dfb1b4b2ac2c64172883333f64659/rootfs)
+(00.113578) mnt: Inspecting sharing on 3024 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/5277ddcb8351bc11c0457ccd37392fda786160a775cfd0cb9fd81dd247881346/rootfs)
+(00.113581) mnt: Inspecting sharing on 3023 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/c5663584ea24ba9f59088123c54a516fdb6c86f7b043891dfe091a9e094f6c16/rootfs)
+(00.113586) mnt: Inspecting sharing on 3022 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/a52bd5a10e5e893ca54a1b1c27c935e2f77a70492907c36a4eeda93efba5e627/rootfs)
+(00.113589) mnt: Inspecting sharing on 3021 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b71bc9849f6163f7a1d8c188d3b6c564be60a17cf99201bf908a21a06f1fd53d/rootfs)
+(00.113591) mnt: Inspecting sharing on 3020 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/b74f5caeb6d153377934b14b0555040fed1353980508074ac00567184ab586d5/rootfs)
+(00.113593) mnt: Inspecting sharing on 3019 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/ec811e544f60b7f3325344c17c8b6bdce45c5fa78f29e3462f3c8f2f0fe86966/rootfs)
+(00.113595) mnt: Inspecting sharing on 3018 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/rootfs)
+(00.113597) mnt: Inspecting sharing on 3017 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/6b64300a776936465cc09c373b53262d4e6826b039dccfd2a37739a594729bad/shm)
+(00.113599) mnt: Inspecting sharing on 3016 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/rootfs)
+(00.113601) mnt: Inspecting sharing on 3015 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/rootfs)
+(00.113603) mnt: Inspecting sharing on 3014 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/rootfs)
+(00.113605) mnt: Inspecting sharing on 3013 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.runtime.v2.task/k8s.io/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/rootfs)
+(00.113608) mnt: Inspecting sharing on 3012 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/f5d14347a8d2d2133cbde9d11b794a68ea0e9adcd234028a8e89eef64f943cbd/shm)
+(00.113610) mnt: Inspecting sharing on 3011 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/e681db9c90098ab2f12b9b94b93da890754f9fab1d0bd66affd264c0faa7e3b5/shm)
+(00.113612) mnt: Inspecting sharing on 3010 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/4400d4af0e23a19f26b864360fdf63f5c2753bf65f8ab3eecdb2704bfb980eed/shm)
+(00.113614) mnt: Inspecting sharing on 3005 shared_id 0 master_id 0 (@./host/run/containerd/io.containerd.grpc.v1.cri/sandboxes/05b1e241228d45a68529261d64b3c899f98165404f61b430eccce3afb1283ff3/shm)
+(00.113616) mnt: Inspecting sharing on 3004 shared_id 0 master_id 0 (@./host/run)
+(00.113618) mnt: Inspecting sharing on 3003 shared_id 0 master_id 0 (@./host/dev/mqueue)
+(00.113620) mnt: Inspecting sharing on 3002 shared_id 0 master_id 0 (@./host/dev/hugepages)
+(00.113622) mnt: Inspecting sharing on 3001 shared_id 0 master_id 0 (@./host/dev/pts)
+(00.113624) mnt: Inspecting sharing on 3000 shared_id 0 master_id 0 (@./host/dev/shm)
+(00.113627) mnt: Inspecting sharing on 2999 shared_id 0 master_id 0 (@./host/dev)
+(00.113629) mnt: Inspecting sharing on 2998 shared_id 0 master_id 0 (@./host/sys/kernel/config)
+(00.113631) mnt: Inspecting sharing on 2997 shared_id 0 master_id 0 (@./host/sys/fs/fuse/connections)
+(00.113633) mnt: Inspecting sharing on 2994 shared_id 0 master_id 0 (@./host/sys/kernel/debug)
+(00.113635) mnt: Inspecting sharing on 2993 shared_id 0 master_id 0 (@./host/sys/fs/bpf)
+(00.113637) mnt: Inspecting sharing on 2992 shared_id 0 master_id 0 (@./host/sys/firmware/efi/efivars)
+(00.113639) mnt: Inspecting sharing on 2991 shared_id 0 master_id 0 (@./host/sys/fs/pstore)
+(00.113641) mnt: Inspecting sharing on 2990 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/perf_event)
+(00.113643) mnt: Inspecting sharing on 2989 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/rdma)
+(00.113650) mnt: Inspecting sharing on 2988 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/memory)
+(00.113652) mnt: Inspecting sharing on 2987 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/pids)
+(00.113654) mnt: Inspecting sharing on 2986 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/hugetlb)
+(00.113656) mnt: Inspecting sharing on 2985 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/freezer)
+(00.113658) mnt: Inspecting sharing on 2984 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/cpuset)
+(00.113660) mnt: Inspecting sharing on 2983 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/devices)
+(00.113662) mnt: Inspecting sharing on 2982 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/blkio)
+(00.113664) mnt: Inspecting sharing on 2981 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/net_cls,net_prio)
+(00.113666) mnt: Inspecting sharing on 2980 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/cpu,cpuacct)
+(00.113669) mnt: Inspecting sharing on 2979 shared_id 0 master_id 0 (@./host/sys/fs/cgroup/systemd)
+(00.113671) mnt: Inspecting sharing on 2978 shared_id 0 master_id 0 (@./host/sys/fs/cgroup)
+(00.113673) mnt: Inspecting sharing on 2977 shared_id 0 master_id 0 (@./host/sys/kernel/security)
+(00.113675) mnt: Inspecting sharing on 2976 shared_id 0 master_id 0 (@./host/sys)
+(00.113677) mnt: Inspecting sharing on 2975 shared_id 0 master_id 0 (@./host)
+(00.113697) mnt: Inspecting sharing on 2974 shared_id 0 master_id 16 (@./sys/fs/cgroup/perf_event)
+(00.113701) mnt: Detected external slavery for 2974 via 2974
+(00.113704) mnt: Inspecting sharing on 2973 shared_id 0 master_id 15 (@./sys/fs/cgroup/rdma)
+(00.113707) mnt: Detected external slavery for 2973 via 2973
+(00.113709) mnt: Inspecting sharing on 2972 shared_id 0 master_id 14 (@./sys/fs/cgroup/memory)
+(00.113713) mnt: Detected external slavery for 2972 via 2972
+(00.113715) mnt: Inspecting sharing on 2971 shared_id 0 master_id 13 (@./sys/fs/cgroup/pids)
+(00.113718) mnt: Detected external slavery for 2971 via 2971
+(00.113720) mnt: Inspecting sharing on 2970 shared_id 0 master_id 12 (@./sys/fs/cgroup/hugetlb)
+(00.113723) mnt: Detected external slavery for 2970 via 2970
+(00.113726) mnt: Inspecting sharing on 2969 shared_id 0 master_id 11 (@./sys/fs/cgroup/freezer)
+(00.113729) mnt: Detected external slavery for 2969 via 2969
+(00.113731) mnt: Inspecting sharing on 2968 shared_id 0 master_id 10 (@./sys/fs/cgroup/cpuset)
+(00.113734) mnt: Detected external slavery for 2968 via 2968
+(00.113736) mnt: Inspecting sharing on 2967 shared_id 0 master_id 9 (@./sys/fs/cgroup/devices)
+(00.113739) mnt: Detected external slavery for 2967 via 2967
+(00.113742) mnt: Inspecting sharing on 2966 shared_id 0 master_id 8 (@./sys/fs/cgroup/blkio)
+(00.113745) mnt: Detected external slavery for 2966 via 2966
+(00.113747) mnt: Inspecting sharing on 2965 shared_id 0 master_id 7 (@./sys/fs/cgroup/net_cls,net_prio)
+(00.113750) mnt: Detected external slavery for 2965 via 2965
+(00.113752) mnt: Inspecting sharing on 2964 shared_id 0 master_id 6 (@./sys/fs/cgroup/cpu,cpuacct)
+(00.113756) mnt: Detected external slavery for 2964 via 2964
+(00.113758) mnt: Inspecting sharing on 2963 shared_id 0 master_id 5 (@./sys/fs/cgroup/systemd)
+(00.113761) mnt: Detected external slavery for 2963 via 2963
+(00.113763) mnt: Inspecting sharing on 2962 shared_id 0 master_id 0 (@./sys/fs/cgroup)
+(00.113765) mnt: Inspecting sharing on 2961 shared_id 0 master_id 0 (@./sys)
+(00.113768) mnt: Inspecting sharing on 2959 shared_id 0 master_id 0 (@./dev/mqueue)
+(00.113770) mnt: Inspecting sharing on 2947 shared_id 0 master_id 0 (@./dev/pts)
+(00.113797) mnt: Inspecting sharing on 2927 shared_id 0 master_id 0 (@./dev)
+(00.113799) mnt: Inspecting sharing on 2926 shared_id 0 master_id 0 (@./proc)
+(00.113802) mnt: Inspecting sharing on 2925 shared_id 0 master_id 849 (@./)
+(00.113805) mnt: Detected external slavery for 2925 via 2925
+(00.113814) Error (criu/mount.c:724): mnt: FS mnt ./host/mnt dev 0x800011 root / unsupported id 3079
+(00.113873) net: Unlock network
+(00.113881) Unfreezing tasks into 1
+(00.113889) 	Unseizing 3588262 into 1
+(00.113968) Error (criu/cr-dump.c:2093): Dumping FAILED.
