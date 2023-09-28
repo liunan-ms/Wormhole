@@ -7,17 +7,17 @@ spec:
     - name: iofileworkload
       image: nikolabo/alpineio
       volumeMounts:
-        - name: host
-          mountPath: /host
+        - name: workload-pod
+          mountPath: /workload-volume
       env: 
       - name: user
         value: $user
       - name: access
         value: $access
   volumes:
-    - name: host
+    - name: workload-pod
       hostPath:
-        path: /
+        path: /home
         type: Directory
   nodeSelector:
     kubernetes.io/hostname: aks-nodepool1-25096715-vmss000000
