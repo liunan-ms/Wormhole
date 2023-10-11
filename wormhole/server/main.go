@@ -101,7 +101,7 @@ func createCheckpoint(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Destination pod created successfully")
 
 	// Wait for destination container to be created
-	for pod.Status.Phase == core.PodPending {
+	for pod.Status.Phase != core.PodPending {
 		pod, err = clientset.CoreV1().Pods(pod.Namespace).Get(context.TODO(), pod.Name, metav1.GetOptions{})
 		if err != nil {
 			log.Fatal(err)

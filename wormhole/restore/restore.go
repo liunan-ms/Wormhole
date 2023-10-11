@@ -24,12 +24,12 @@ var ctx context.Context
 
 // Regex rules for pod-specific resources
 var rules = []string{
-	`/pods/(.*)/etc-hosts`, // pod uid
-	`/workload/(.*)"`,      // termination log id
-	`/sandboxes/(.*)/`,     // cri pod sandbox id
-	`access-(.*)"`,         // kube api access id
-	`/besteffort/.*/(.*)"`, // container id
-	`/proc/(.*)/ns/`}       // pod namesace pid
+	`/pods/([^/]*)/etc-hosts`, // pod uid
+	`/workload/([^"]*)"`,      // termination log id
+	`/sandboxes/([^/]*)/`,     // cri pod sandbox id
+	`access-([^"]*)"`,         // kube api access id
+	`/besteffort/.*/(.*)"`,    // container id
+	`/proc/([^/]*)/ns/`}       // pod namesace pid
 
 func main() {
 	containerName := "alprestr"
@@ -40,6 +40,7 @@ func main() {
 		log.Fatal("wrmrestore: missing container id argument")
 	}
 	containerId := os.Args[1]
+	fmt.Println("containerID: ", containerId)
 
 	fmt.Println("Attempting to open containerd client connection...")
 	client, err := containerd.New("/run/containerd/containerd.sock")
@@ -57,12 +58,14 @@ func main() {
 
 	// Extract spec that needs to be modified
 	d := string(image.Metadata().Target.Digest)
+	fmt.Println("manifest id: ", d)
 	manifest, err := ioutil.ReadFile("/var/lib/containerd/io.containerd.content.v1.content/blobs/sha256/" + d[7:len(d)])
 	if err != nil {
 		log.Fatal(err)
 	}
 	re := regexp.MustCompile(`checkpoint\.config[^:]*:[^:]*:([^"]*)"`)
 	specDigest := string(re.FindSubmatch(manifest)[1])
+	fmt.Println("spec id: ", specDigest)
 	specPath := "/var/lib/containerd/io.containerd.content.v1.content/blobs/sha256/" + specDigest
 
 	spec, err := ioutil.ReadFile(specPath)
@@ -102,9 +105,13 @@ func main() {
 
 	// Modify spec to match new pod external resources
 	for _, exp := range rules {
+		fmt.Println("exp: ", exp)
 		re = regexp.MustCompile(exp)
+		fmt.Println("re: ", re)
 		new := re.FindSubmatch(in)[1]
+		fmt.Println("new: ", new)
 		old := re.FindSubmatch(spec)[1]
+		fmt.Println("old: ", old)
 		spec = []byte(strings.ReplaceAll(string(spec), string(old), string(new)))
 	}
 
@@ -142,7 +149,7 @@ func main() {
 // Fetch and unpack checkpoint image from container registry
 // Based on implementation in containerd ctr cli: https://github.com/containerd/containerd/blob/1bb39b833e26a6dc7435fcec8ded44a04b3827f7/cmd/ctr/commands/images/pull.go#L70
 func imagePull(ctx context.Context, client *containerd.Client) containerd.Image {
-	image, err := client.Fetch(ctx, "docker.io/nikolabo/io-checkpoint:latest")
+	image, err := client.Fetch(ctx, "docker.io/liunan2023/io-checkpoint:latest")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -161,7 +168,7 @@ func imagePull(ctx context.Context, client *containerd.Client) containerd.Image 
 		i := containerd.NewImageWithPlatform(client, image, platforms.Only(platform))
 		err = i.Unpack(ctx, "")
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("unpack err: ", err)
 		}
 	}
 	return containerd.NewImage(client, image)

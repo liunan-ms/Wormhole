@@ -54,7 +54,7 @@ func main() {
 	// Push checkpoint image
 	resolver := GetResolver()
 	ropts := []containerd.RemoteOpt{containerd.WithResolver(resolver)}
-	err = client.Push(ctx, "docker.io/nikolabo/io-checkpoint:latest", checkpoint.Target(), ropts...)
+	err = client.Push(ctx, "docker.io/liunan2023/io-checkpoint:latest", checkpoint.Target(), ropts...)
 	if err != nil {
 		log.Fatal(err)
 	}

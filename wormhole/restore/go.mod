@@ -1,8 +1,11 @@
-module checkpoint
+module restore
 
 go 1.18
 
-require github.com/containerd/containerd v1.6.8
+require (
+	github.com/containerd/containerd v1.6.8
+	github.com/containerd/typeurl v1.0.2
+)
 
 require (
 	github.com/Microsoft/go-winio v0.5.1 // indirect
@@ -11,7 +14,6 @@ require (
 	github.com/containerd/continuity v0.2.2 // indirect
 	github.com/containerd/fifo v1.0.0 // indirect
 	github.com/containerd/ttrpc v1.1.0 // indirect
-	github.com/containerd/typeurl v1.0.2 // indirect
 	github.com/docker/go-events v0.0.0-20190806004212-e31b211e4f1c // indirect
 	github.com/gogo/googleapis v1.4.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -27,7 +29,6 @@ require (
 	github.com/opencontainers/runc v1.1.2 // indirect
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417 // indirect
 	github.com/opencontainers/selinux v1.10.1 // indirect
-	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	go.opencensus.io v0.23.0 // indirect
