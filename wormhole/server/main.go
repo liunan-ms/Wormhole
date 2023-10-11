@@ -59,6 +59,8 @@ func configure(w http.ResponseWriter, r *http.Request) {
 	}
 	addr = addresses[0]
 	host = hosts[0]
+	fmt.Println("addr: ", addr)
+	fmt.Println("host: ", host)
 
 	fmt.Fprintf(w, "Destination configured\n")
 }
@@ -66,6 +68,9 @@ func configure(w http.ResponseWriter, r *http.Request) {
 // Migration endpoint handler
 func createCheckpoint(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("/checkpoint endpoint accessed\n")
+
+	fmt.Println("addr: ", addr)
+	fmt.Println("host: ", host)
 
 	if addr == "" || host == "" {
 		fmt.Fprintf(w, "Destination not configured\n")
@@ -101,7 +106,7 @@ func createCheckpoint(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Destination pod created successfully")
 
 	// Wait for destination container to be created
-	for pod.Status.Phase != core.PodPending {
+	for pod.Status.Phase != core.PodRunning {
 		pod, err = clientset.CoreV1().Pods(pod.Namespace).Get(context.TODO(), pod.Name, metav1.GetOptions{})
 		if err != nil {
 			log.Fatal(err)

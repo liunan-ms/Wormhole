@@ -102,16 +102,16 @@ func main() {
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "can't marshal %+v as a JSON string: %v\n", x, err)
 	}
-
+	fmt.Println("spec: ", spec)
 	// Modify spec to match new pod external resources
 	for _, exp := range rules {
 		fmt.Println("exp: ", exp)
 		re = regexp.MustCompile(exp)
 		fmt.Println("re: ", re)
 		new := re.FindSubmatch(in)[1]
-		fmt.Println("new: ", new)
+		fmt.Println("new: ", string(new))
 		old := re.FindSubmatch(spec)[1]
-		fmt.Println("old: ", old)
+		fmt.Println("old: ", string(old))
 		spec = []byte(strings.ReplaceAll(string(spec), string(old), string(new)))
 	}
 
